@@ -12,7 +12,20 @@ import "./styles.css";
 const App = () => {
     return (
         <div>
-            <Navbar />
+            <BrowserRouter>
+                <Navbar />
+                <Routes>
+                    <Route exact path="/" element={<Home />}></Route>
+
+                    <Route path="/aboutme" element={<AboutMe />}></Route>
+                    <Route
+                        path="/skillsandprojects"
+                        element={<SkillsAndProjects />}
+                    ></Route>
+                    <Route path="/education" element={<Education />}></Route>
+                    <Route path="/contact" element={<Contact />}></Route>
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 };

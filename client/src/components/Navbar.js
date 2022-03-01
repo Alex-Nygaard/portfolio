@@ -1,5 +1,4 @@
 import React from "react";
-import moveOnScroll from "./scripts/moveOnScroll";
 import resizeNavbar from "./scripts/resizeNavbar";
 
 const Navbar = () => {

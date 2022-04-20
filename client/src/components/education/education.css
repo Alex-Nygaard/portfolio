@@ -1,0 +1,69 @@
+#education {
+    height: 400vh;
+    
+}
+
+.education-title {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.school {
+    height: 33%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.school-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.school-logo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30vw;
+    object-fit: contain;
+    transition: var(--transition);
+    padding: 1rem;
+}
+
+.school-logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.school-text {
+    position: absolute;
+
+    padding: 3rem;
+}
+
+.school-text > h2 {
+    font-style: italic;
+}
+
+.school-text > p {
+    font-size: 1.3rem;
+}
+
+ul {
+    padding: 1rem;
+}
+
+li {
+    padding: 0.2rem;
+}
+
+

@@ -1,40 +1,60 @@
-:root {
-    --color-1: #25274d;
-    --color-2: #464866;
-    --color-3: #aaabb8;
-    --color-4: #2e9cca;
-    --color-5: #29648a;
-
-    --logo-row-shift: -250px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--color-1);
-    color: white;
-    overflow-x: hidden;
-}
-
-.container {
-    height: 500vh;
-    width: 100vw;
-}
-
 .home {
-    font-size: 9em;
-
+    font-size: 6vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.title-section {
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.title-buttons * {
+    margin: 2rem;
+    font-size: 1.2vw;
+}
+
+.scroll-more {
+    font-size: 0.25em;
+    margin: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    animation: scroll-more-anim 1s alternate infinite ease-in-out;
+
+    opacity: 0.7;
+}
+
+.scroll-more > img {
+    width: 32px;
+    height: 32px;
+}
+
+@keyframes scroll-more-anim {
+    from {
+        transform: translate(0%, 0%);
+    }
+
+    to {
+        transform: translate(0%, 20%);
+    }
+}
+
+/* 
 .title-container {
     display: grid;
     animation: title-fade-in 2s;
@@ -47,15 +67,11 @@ body {
 
 .second-hello {
     color: var(--color-3);
-    /* transform: translate(5px, 5px); */
-
     animation: second-hello-anim 1s ease-in-out;
 }
 
 .third-hello {
     color: var(--color-4);
-    /* transform: translate(-5px, -5px); */
-
     animation: third-hello-anim 1s ease-in-out;
 }
 
@@ -127,6 +143,8 @@ body {
     width: 32px;
     height: 32px;
 }
+
+
 
 .logo-container {
     position: absolute;
@@ -341,70 +359,6 @@ body {
     }
 }
 
-.nav-link {
-    position: fixed;
-    font-size: 2em;
-    z-index: 100;
-}
+ */
 
-.about-me {
-    height: 200vh;
-    width: 100vw;
-    display: flex;
-}
 
-.about-me-text {
-    width: 60%;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-}
-
-.about-me-title {
-    font-size: 6em;
-    margin: 30px;
-}
-
-.about-me-me {
-    color: var(--color-4);
-}
-
-.about-me-image {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portrait {
-    width: 60%;
-    z-index: 1;
-}
-
-.about-me-image::before {
-    content: "";
-    display: block;
-    width: 50vw;
-    height: 50vw;
-    /* transform: rotate(45deg); */
-    background-color: var(--color-4);
-    position: absolute;
-    transform: rotate(45deg);
-    right: -200px;
-}
-
-.education {
-    height: 200vh;
-    background-color: darkgray;
-}
-
-.school {
-    height: 33%;
-}
-
-.tudelft-logo {
-    height: 100%;
-}

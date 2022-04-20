@@ -1,0 +1,71 @@
+:root {
+    --color-1: #25274d;
+    --color-2: #464866;
+    --color-3: #aaabb8;
+    --color-4: #2e9cca;
+    --color-5: #29648a;
+
+    --color-bg: #25274d;
+    --color-white: #ffffff;
+    --color-btn-primary: #2e9cca;
+
+    --transition: all 400ms ease;
+
+    --logo-row-shift: -250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-1);
+    color: white;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    transition: var(--transition);
+}
+
+.btn {
+    width: max-content;
+    color: var(--color-btn-primary);
+    border-radius: 0.4rem;
+    padding: 0.75rem 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: var(--transition);
+    border: 1px solid var(--color-btn-primary);
+    background-color: transparent;
+}
+
+.btn:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    background-color: transparent;
+}
+
+.btn-primary {
+    background: var(--color-btn-primary);
+    color: var(--color-bg)
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+

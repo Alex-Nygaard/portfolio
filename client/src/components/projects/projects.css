@@ -15,14 +15,20 @@
 }
 
 .project-holder {
-    width: 230px;
-    height: 380px;
+    width: 300px;
+    height: max-content;
     padding: 1rem;
     margin: 1rem;
     background-color: var(--color-2);
     border-radius: 1rem;
 
     position: relative;
+
+    transition: var(--transition);
+}
+
+.project-holder:hover {
+    transform: scale(1.1);
 }
 
 .project-holder > * {
@@ -32,6 +38,7 @@
 .project-img {
     border-radius: 1rem;
     height: 60%;
+    height: 200px;
 }
 
 .gitlink {
@@ -41,6 +48,6 @@
 
 .gitlink:hover {
     cursor: pointer;
-    font-size: 3.3rem;
+    color: var(--color-4);
 }
 

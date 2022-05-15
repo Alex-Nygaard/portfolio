@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import arrow from "../../img/arrow.png";
-import logo from "../../img/logo.png";
+// import logo from "../../img/logo.png";
 
 import "./home.css";
 

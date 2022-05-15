@@ -4,7 +4,7 @@ import Project from "./Project";
 
 import QuizzzImage from "./projectImages/quizzz.png";
 import MarketplaceImage from "./projectImages/marketplace.png";
-import ISAKNOWImage from "./projectImages/isaknow.png";
+// import ISAKNOWImage from "./projectImages/isaknow.png";
 import EE from "./projectImages/ee.png";
 import BookInventory from "./projectImages/bookInventory.png";
 import Memory from "./projectImages/memory.png";
@@ -15,7 +15,7 @@ import { FaJava } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiJavascript } from "react-icons/si";
-import { DiRasberryPi } from "react-icons/di";
+// import { DiRasberryPi } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { DiSqllite } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";

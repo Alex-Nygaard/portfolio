@@ -9,6 +9,7 @@ import EE from "./projectImages/ee.png";
 import BookInventory from "./projectImages/bookInventory.png";
 import Memory from "./projectImages/memory.png";
 import Martian from "./projectImages/martian.jpg";
+import Portfolio from "./projectImages/portfolio.png";
 
 import { FaJava } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
@@ -27,7 +28,7 @@ import { SiCplusplus } from "react-icons/si";
 const Projects = () => {
     return (
         <section id="projects">
-            <h1>Projects</h1>
+            <h1 className="project-title title-dot">Projects</h1>
             <div className="project-container">
                 <Project
                     title="Quizzz app"
@@ -49,7 +50,7 @@ const Projects = () => {
                     ]}
                     gitlink="https://github.com/Alex-Nygaard/Marketplace-platform"
                 />
-                <Project
+                {/* <Project
                     title="ISAKNOW"
                     type="Creativity, Activity and Service Project"
                     img={ISAKNOWImage}
@@ -60,7 +61,7 @@ const Projects = () => {
                         DiCss3,
                         DiRasberryPi,
                     ]}
-                />
+                /> */}
                 <Project
                     title="A comparison study on detection of Deepfakes using ANNs"
                     type="Deep learning research project"
@@ -85,6 +86,7 @@ const Projects = () => {
                 <Project
                     title="Portfolio"
                     type="This website"
+                    img={Portfolio}
                     tech={[
                         FaReact,
                         AiFillHtml5,

@@ -15,6 +15,11 @@
     gap: 40px;
 }
 
+.project-title {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
 .project-holder {
     width: 300px;
     height: max-content;

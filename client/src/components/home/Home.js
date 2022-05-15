@@ -57,7 +57,7 @@ const Home = () => {
     return (
         <section className="home">
             <div className="title-section">
-                <h1 className="title">Hey, I'm Alex</h1>
+                <h1 className="title title-dot">Hey, I'm Alex</h1>
                 <div className="title-buttons">
                     <button className="btn downloadCV" onClick={downloadCV}>
                         Download CV

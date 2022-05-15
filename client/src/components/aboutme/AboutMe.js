@@ -19,12 +19,18 @@ const AboutMe = () => {
                 />
 
                 <div className="aboutme-text">
-                    <h1>About me.</h1>
+                    <h1 className="title-dot">About me</h1>
 
                     <p>
-                        I'm a junior developer currently studying Computer
-                        Science and Engineering at TU Delft. My interests
-                        include
+                        I'm a student developer currently in my first year of
+                        studying Computer Science and Engineering at TU Delft.
+                        My interests include backend development, machine
+                        learning and cloud computing. Outside school I always
+                        strive to learn new and interesting skills, and right
+                        now I'm exploring data analysis in Python with
+                        <a href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/">
+                            this amazing course.
+                        </a>
                     </p>
 
                     <button

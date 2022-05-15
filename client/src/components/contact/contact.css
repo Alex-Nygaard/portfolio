@@ -11,11 +11,6 @@
     font-size: 4rem;
 }
 
-.contact-title::after {
-    content: ".";
-    color: var(--color-btn-primary);
-}
-
 .contact-links {
     font-size: 5rem;
     letter-spacing: 20px;

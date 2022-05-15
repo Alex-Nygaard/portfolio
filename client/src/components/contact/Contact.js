@@ -9,7 +9,7 @@ import "./contact.css";
 const Contact = () => {
     return (
         <section id="contact">
-            <span className="contact-title">Let's talk</span>
+            <span className="contact-title title-dot">Let's talk</span>
             <div className="contact-links">
                 <a href="mailto: alexander.k.nygard@gmail.com">
                     <MdAlternateEmail />

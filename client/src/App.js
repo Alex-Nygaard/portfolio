@@ -1,12 +1,10 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import AboutMe from "./components/AboutMe";
-import SkillsAndProjects from "./components/SkillsAndProjects";
-import Education from "./components/Education";
-import Contact from "./components/Contact";
-
-import "./styles.css";
+import Navbar from "./components/navbar/Navbar";
+import Home from "./components/home/Home";
+import AboutMe from "./components/aboutme/AboutMe";
+import Projects from "./components/projects/Projects";
+import Education from "./components/education/Education";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
     return (
@@ -15,7 +13,7 @@ const App = () => {
             <Home />
             <AboutMe />
             <Education />
-            <SkillsAndProjects />
+            <Projects />
             <Contact />
         </div>
     );

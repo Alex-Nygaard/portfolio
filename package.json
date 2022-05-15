@@ -6,13 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "start": "node server/index.js",
-    "build": "cd client && npm install && npm run build"
+    "build": "cd client && npm install && npm run build",
+    "dev": "cd client && npm install && npm start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "react-icons": "^4.3.1"
   },
   "engines": {
     "node": "17.2.0"

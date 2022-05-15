@@ -55,7 +55,7 @@ const Home = () => {
     };
 
     return (
-        <section className="home">
+        <section id="home">
             <div className="title-section">
                 <h1 className="title title-dot">Hey, I'm Alex</h1>
                 <div className="title-buttons">

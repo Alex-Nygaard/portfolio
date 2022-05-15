@@ -21,11 +21,15 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     background-color: var(--color-1);
     color: white;
     overflow-x: hidden;
+    position: absolute;
     width: 100vw;
+    
 }
 
 html {
@@ -36,9 +40,21 @@ html {
     display: none;
 }
 
+
+
 a {
-    transition: var(--transition);
+    text-decoration: none;
+    color: var(--color-btn-primary);
+
+    background: linear-gradient(var(--color-btn-primary) 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+    transition: 0.4s, background-position 0s;
 }
+
+a:hover {
+    --p: 100%;
+    color: #fff;
+}
+
 
 .btn {
     width: max-content;
@@ -49,18 +65,46 @@ a {
     display: inline-block;
     transition: var(--transition);
     border: 1px solid var(--color-btn-primary);
-    background-color: transparent;
+    background-color: var(--color-bg);
 }
 
 .btn:hover {
-    background: var(--color-white);
+    background-color: var(--color-btn-primary);
     color: var(--color-bg);
-    background-color: transparent;
 }
 
 .btn-primary {
     background: var(--color-btn-primary);
-    color: var(--color-bg)
+    color: var(--color-bg);
+}
+
+.btn-primary:hover {
+    /* background: var(--color-bg);
+    color: var(--color-btn-primary); */
+    color: white;
+    animation: btnShake 0.5s;
+}
+
+@keyframes btnShake {
+    from {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(5deg);
+    }
+    40% {
+        transform: rotate(-5deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    to {
+        transform: rotate(0deg);
+
+    }
 }
 
 img {

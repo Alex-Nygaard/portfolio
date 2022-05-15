@@ -3,6 +3,12 @@ import portrait from "../../img/portrait.png";
 import "./aboutme.css";
 
 const AboutMe = () => {
+    const scrollToContact = () => {
+        document
+            .getElementById("contact")
+            .scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+
     return (
         <section id="aboutme">
             <section className="aboutme-container">
@@ -16,15 +22,17 @@ const AboutMe = () => {
                     <h1>About me.</h1>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Laboriosam explicabo aliquam tenetur praesentium cum
-                        officia optio modi veritatis illum magnam quas dolorem
-                        perspiciatis nulla, consequuntur dolor necessitatibus
-                        aut, obcaecati eligendi error. Dicta enim non quae
-                        architecto dignissimos recusandae! Consequuntur, soluta!
+                        I'm a junior developer currently studying Computer
+                        Science and Engineering at TU Delft. My interests
+                        include
                     </p>
 
-                    <button className="btn btn-primary">Get in touch</button>
+                    <button
+                        className="btn btn-primary"
+                        onClick={scrollToContact}
+                    >
+                        Get in touch
+                    </button>
                 </div>
             </section>
         </section>

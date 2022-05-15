@@ -11,6 +11,29 @@
     width: max-content;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { 
+        opacity: 0;
+        transform: translate(0%, 10%);
+     }
+    to   { 
+        opacity: 1;
+    }
+}
+
+.title {
+    font-size: 6rem;
+    max-width: 80vw;
+    text-align: center;
+}
+
+.title::after {
+    content: ".";
+    color: var(--color-btn-primary);
 }
 
 .title-buttons {
@@ -20,13 +43,17 @@
     height: 100%;
 }
 
+.download-success {
+    color: #5cb85c;
+}
+
 .title-buttons * {
     margin: 2rem;
-    font-size: 1.2vw;
+    font-size: 1rem;
 }
 
 .scroll-more {
-    font-size: 0.25em;
+    font-size: 1rem;
     margin: 2rem;
 
     display: flex;
@@ -37,85 +64,15 @@
     animation: scroll-more-anim 1s alternate infinite ease-in-out;
 
     opacity: 0.7;
+
+    position: absolute;
+    bottom: -40%;
+    
 }
 
 .scroll-more > img {
     width: 32px;
     height: 32px;
-}
-
-@keyframes scroll-more-anim {
-    from {
-        transform: translate(0%, 0%);
-    }
-
-    to {
-        transform: translate(0%, 20%);
-    }
-}
-
-/* 
-.title-container {
-    display: grid;
-    animation: title-fade-in 2s;
-}
-
-.title-container > div {
-    grid-row: 1;
-    grid-column: 1;
-}
-
-.second-hello {
-    color: var(--color-3);
-    animation: second-hello-anim 1s ease-in-out;
-}
-
-.third-hello {
-    color: var(--color-4);
-    animation: third-hello-anim 1s ease-in-out;
-}
-
-@keyframes second-hello-anim {
-    from {
-        transform: translate(10%, 10%);
-        opacity: 0.7;
-    }
-
-    to {
-        transform: translate(5px, 5px);
-
-        opacity: 1;
-    }
-}
-
-@keyframes third-hello-anim {
-    from {
-        transform: translate(-10%, -10%);
-        opacity: 0.7;
-    }
-
-    to {
-        transform: translate(-5px, -5px);
-
-        opacity: 1;
-    }
-}
-
-.main-hello {
-    z-index: 1;
-}
-
-.scroll-more {
-    position: absolute;
-    font-size: 0.25em;
-    bottom: 50px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    animation: scroll-more-anim 1s alternate infinite ease-in-out;
 }
 
 @keyframes scroll-more-anim {
@@ -139,12 +96,6 @@
     }
 }
 
-.scroll-more > img {
-    width: 32px;
-    height: 32px;
-}
-
-
 
 .logo-container {
     position: absolute;
@@ -153,6 +104,11 @@
     width: 100vw;
     height: 100vh;
     opacity: 0.3;
+    z-index: -1;
+}
+
+.logo-container * {
+    position: absolute;
 }
 
 .logo-container > * {
@@ -358,7 +314,4 @@
         transform: translate(calc(100% + 2 * var(--logo-row-shift)), -50%);
     }
 }
-
- */
-
 

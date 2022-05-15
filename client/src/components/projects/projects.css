@@ -1,10 +1,10 @@
 #projects {
-    margin-top: 60vh;
-    height: 100vh;
+    height: max-content;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 .project-container {
@@ -12,13 +12,13 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
 .project-holder {
     width: 300px;
     height: max-content;
     padding: 1rem;
-    margin: 1rem;
     background-color: var(--color-2);
     border-radius: 1rem;
 
@@ -28,7 +28,7 @@
 }
 
 .project-holder:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .project-holder > * {
@@ -51,3 +51,53 @@
     color: var(--color-4);
 }
 
+.popup-text {
+    width: max-content;
+    max-width: 280px;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+    
+    backdrop-filter: blur(5px);
+    
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: -10;
+
+    bottom: 105%;
+    /* left: 50%; */
+
+    font-size: 3rem;
+
+    opacity: 0;
+    padding: 10px;
+}
+
+.project-holder:hover .popup-text {
+    opacity: 1;
+    animation: popup-anim 0.5s ease;
+    left: 50%;
+
+    transform: translate(-50%, 0%);
+}
+
+
+@keyframes popup-anim {
+    from {
+        transform: translate(-50%, 10%);
+        opacity: 0;
+
+    }
+    to {
+        transform: translate(-50%, 0%);
+        opacity: 1;
+    }
+}
+
+.tech-used-text {
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+}

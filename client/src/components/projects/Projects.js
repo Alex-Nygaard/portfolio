@@ -50,38 +50,12 @@ const Projects = () => {
                     ]}
                     gitlink="https://github.com/Alex-Nygaard/Marketplace-platform"
                 />
-                {/* <Project
-                    title="ISAKNOW"
-                    type="Creativity, Activity and Service Project"
-                    img={ISAKNOWImage}
-                    tech={[
-                        FaPython,
-                        AiFillHtml5,
-                        SiJavascript,
-                        DiCss3,
-                        DiRasberryPi,
-                    ]}
-                /> */}
                 <Project
                     title="A comparison study on detection of Deepfakes using ANNs"
                     type="Deep learning research project"
                     img={EE}
                     tech={[FaPython, SiTensorflow]}
                     gitlink="https://github.com/Alex-Nygaard/EE-Project"
-                />
-                <Project
-                    title="Memory Game"
-                    type="Web Technology class project"
-                    img={Memory}
-                    tech={[AiFillHtml5, SiJavascript, DiCss3, FaNodeJs]}
-                    gitlink="https://github.com/Alex-Nygaard/MemoryGame"
-                />
-                <Project
-                    title="Book inventory"
-                    type="Computer Science class project"
-                    img={BookInventory}
-                    tech={[FaPython]}
-                    gitlink="https://github.com/Alex-Nygaard/Book-Inventory"
                 />
                 <Project
                     title="Portfolio"
@@ -97,6 +71,35 @@ const Projects = () => {
                     ]}
                     gitlink="https://github.com/Alex-Nygaard/portfolio"
                 />
+                <Project
+                    title="Memory Game"
+                    type="Web Technology class project"
+                    img={Memory}
+                    tech={[AiFillHtml5, SiJavascript, DiCss3, FaNodeJs]}
+                    gitlink="https://github.com/Alex-Nygaard/MemoryGame"
+                />
+
+                {/* <Project
+                    title="ISAKNOW"
+                    type="Creativity, Activity and Service Project"
+                    img={ISAKNOWImage}
+                    tech={[
+                        FaPython,
+                        AiFillHtml5,
+                        SiJavascript,
+                        DiCss3,
+                        DiRasberryPi,
+                    ]}
+                /> */}
+
+                <Project
+                    title="Book inventory"
+                    type="Computer Science class project"
+                    img={BookInventory}
+                    tech={[FaPython]}
+                    gitlink="https://github.com/Alex-Nygaard/Book-Inventory"
+                />
+
                 <Project
                     title="Martian IOT communication"
                     type="Computer Science class project"

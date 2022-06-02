@@ -13,7 +13,7 @@ const Home = () => {
     };
 
     const downloadCV = async () => {
-        const url = "http://localhost:3001/api/cv";
+        const url = "https://alexnygaard.com/api/cv";
         const btn = document.querySelector(".downloadCV");
 
         btn.innerHTML = "Loading...";
@@ -69,11 +69,10 @@ const Home = () => {
                         Get in touch
                     </button>
                 </div>
-
-                <div className="scroll-more">
-                    <p>Scroll for more</p>
-                    <img src={arrow} alt=""></img>
-                </div>
+            </div>
+            <div className="scroll-more">
+                <p>Scroll for more</p>
+                <img src={arrow} alt=""></img>
             </div>
 
             {/* <div className="title-container">

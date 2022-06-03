@@ -1,6 +1,4 @@
 import React from "react";
-import { saveAs } from "file-saver";
-import axios from "axios";
 import arrow from "../../img/arrow.png";
 // import logo from "../../img/logo.png";
 

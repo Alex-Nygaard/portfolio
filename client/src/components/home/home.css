@@ -1,6 +1,7 @@
 #home {
     font-size: 6vw;
     height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +12,6 @@
     width: max-content;
     flex-direction: column;
     align-items: center;
-    position: relative;
     animation: fadein 2s;
 }
 
@@ -58,7 +58,7 @@
     top: 65vh;
     
     font-size: 1rem;
-    margin: 2rem;
+    /* margin: 2rem; */
 
     display: flex;
     flex-direction: column;

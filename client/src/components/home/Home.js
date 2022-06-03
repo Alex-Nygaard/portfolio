@@ -1,4 +1,5 @@
 import React from "react";
+import { saveAs } from "file-saver";
 import axios from "axios";
 import arrow from "../../img/arrow.png";
 // import logo from "../../img/logo.png";
@@ -12,7 +13,24 @@ const Home = () => {
             .scrollIntoView({ behavior: "smooth", block: "start" });
     };
 
-    const downloadCV = async () => {
+    const downloadCV = () => {
+        var link = document.createElement("a");
+        link.href = "https://alexnygaard.com/api/cv";
+        link.download = "ALEXANDER_NYGAARD_CV.pdf";
+        link.target = "_blank";
+        link.dispatchEvent(new MouseEvent("click"));
+        const btn = document.querySelector(".downloadCV");
+        btn.innerHTML = "Downloaded!";
+        btn.style.color = "#5cb85c";
+        btn.style.borderColor = "#5cb85c";
+        setTimeout(() => {
+            btn.innerHTML = "Download CV";
+            btn.style.color = "#2e9cca";
+            btn.style.borderColor = "#2e9cca";
+        }, 2000);
+    };
+
+    /* async () => {
         const url = "https://alexnygaard.com/api/cv";
         const btn = document.querySelector(".downloadCV");
 
@@ -53,6 +71,7 @@ const Home = () => {
             btn.style.borderColor = "#2e9cca";
         }, 2000);
     };
+    */
 
     return (
         <section id="home">

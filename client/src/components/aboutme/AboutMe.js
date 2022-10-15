@@ -22,7 +22,7 @@ const AboutMe = () => {
                     <h1 className="title-dot">About me</h1>
 
                     <p>
-                        I'm a student developer currently in my first year of
+                        I'm a student developer currently in my second year of
                         studying Computer Science and Engineering at TU Delft.
                         My interests include backend development, machine
                         learning and cloud computing. Outside school I always

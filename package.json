@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\"",
     "start": "node server/index.js",
     "build": "cd client && npm install && npm run build",
+    "prod": "cd client && npm install && npm run build && cd .. && node server/index.js",
     "dev": "cd client && npm install && npm start"
   },
   "keywords": [],

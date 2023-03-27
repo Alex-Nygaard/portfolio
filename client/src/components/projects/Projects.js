@@ -4,7 +4,7 @@ import Project from "./Project";
 
 import QuizzzImage from "./projectImages/quizzz.png";
 import MarketplaceImage from "./projectImages/marketplace.png";
-import ISAKNOWImage from "./projectImages/isaknow.png";
+// import ISAKNOWImage from "./projectImages/isaknow.png";
 import EE from "./projectImages/ee.png";
 import BookInventory from "./projectImages/bookInventory.png";
 import Memory from "./projectImages/memory.png";
@@ -15,7 +15,7 @@ import { FaJava } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiJavascript } from "react-icons/si";
-import { DiRasberryPi } from "react-icons/di";
+// import { DiRasberryPi } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { DiSqllite } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";
@@ -50,38 +50,12 @@ const Projects = () => {
                     ]}
                     gitlink="https://github.com/Alex-Nygaard/Marketplace-platform"
                 />
-                {/* <Project
-                    title="ISAKNOW"
-                    type="Creativity, Activity and Service Project"
-                    img={ISAKNOWImage}
-                    tech={[
-                        FaPython,
-                        AiFillHtml5,
-                        SiJavascript,
-                        DiCss3,
-                        DiRasberryPi,
-                    ]}
-                /> */}
                 <Project
                     title="A comparison study on detection of Deepfakes using ANNs"
                     type="Deep learning research project"
                     img={EE}
                     tech={[FaPython, SiTensorflow]}
                     gitlink="https://github.com/Alex-Nygaard/EE-Project"
-                />
-                <Project
-                    title="Memory Game"
-                    type="Web Technology class project"
-                    img={Memory}
-                    tech={[AiFillHtml5, SiJavascript, DiCss3, FaNodeJs]}
-                    gitlink="https://github.com/Alex-Nygaard/MemoryGame"
-                />
-                <Project
-                    title="Book inventory"
-                    type="Computer Science class project"
-                    img={BookInventory}
-                    tech={[FaPython]}
-                    gitlink="https://github.com/Alex-Nygaard/Book-Inventory"
                 />
                 <Project
                     title="Portfolio"
@@ -97,6 +71,35 @@ const Projects = () => {
                     ]}
                     gitlink="https://github.com/Alex-Nygaard/portfolio"
                 />
+                <Project
+                    title="Memory Game"
+                    type="Web Technology class project"
+                    img={Memory}
+                    tech={[AiFillHtml5, SiJavascript, DiCss3, FaNodeJs]}
+                    gitlink="https://github.com/Alex-Nygaard/MemoryGame"
+                />
+
+                {/* <Project
+                    title="ISAKNOW"
+                    type="Creativity, Activity and Service Project"
+                    img={ISAKNOWImage}
+                    tech={[
+                        FaPython,
+                        AiFillHtml5,
+                        SiJavascript,
+                        DiCss3,
+                        DiRasberryPi,
+                    ]}
+                /> */}
+
+                <Project
+                    title="Book inventory"
+                    type="Computer Science class project"
+                    img={BookInventory}
+                    tech={[FaPython]}
+                    gitlink="https://github.com/Alex-Nygaard/Book-Inventory"
+                />
+
                 <Project
                     title="Martian IOT communication"
                     type="Computer Science class project"

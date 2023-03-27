@@ -41,7 +41,9 @@
 }
 
 @media screen and (max-width: 1000px) {
-    
+    #aboutme {
+        height: 150vh;
+    }
 
     .aboutme-container {
         flex-direction: column;

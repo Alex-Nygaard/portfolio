@@ -1,7 +1,6 @@
 import React from "react";
-import axios from "axios";
 import arrow from "../../img/arrow.png";
-import logo from "../../img/logo.png";
+// import logo from "../../img/logo.png";
 
 import "./home.css";
 
@@ -12,8 +11,25 @@ const Home = () => {
             .scrollIntoView({ behavior: "smooth", block: "start" });
     };
 
-    const downloadCV = async () => {
-        const url = "http://localhost:3001/api/cv";
+    const downloadCV = () => {
+        var link = document.createElement("a");
+        link.href = "https://alexnygaard.com/api/cv";
+        link.download = "ALEXANDER_NYGAARD_CV.pdf";
+        link.target = "_blank";
+        link.dispatchEvent(new MouseEvent("click"));
+        const btn = document.querySelector(".downloadCV");
+        btn.innerHTML = "Downloaded!";
+        btn.style.color = "#5cb85c";
+        btn.style.borderColor = "#5cb85c";
+        setTimeout(() => {
+            btn.innerHTML = "Download CV";
+            btn.style.color = "#2e9cca";
+            btn.style.borderColor = "#2e9cca";
+        }, 2000);
+    };
+
+    /* async () => {
+        const url = "https://alexnygaard.com/api/cv";
         const btn = document.querySelector(".downloadCV");
 
         btn.innerHTML = "Loading...";
@@ -53,9 +69,10 @@ const Home = () => {
             btn.style.borderColor = "#2e9cca";
         }, 2000);
     };
+    */
 
     return (
-        <section className="home">
+        <section id="home">
             <div className="title-section">
                 <h1 className="title title-dot">Hey, I'm Alex</h1>
                 <div className="title-buttons">
@@ -69,11 +86,10 @@ const Home = () => {
                         Get in touch
                     </button>
                 </div>
-
-                <div className="scroll-more">
-                    <p>Scroll for more</p>
-                    <img src={arrow} alt=""></img>
-                </div>
+            </div>
+            <div className="scroll-more">
+                <p>Scroll for more</p>
+                <img src={arrow} alt=""></img>
             </div>
 
             {/* <div className="title-container">

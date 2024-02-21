@@ -3,6 +3,7 @@
   import { Button } from '$lib/components/ui/button';
   import { Separator } from '$lib/components/ui/separator';
   import * as HoverCard from '$lib/components/ui/hover-card';
+  import Link from '../components/Link.svelte';
 </script>
 
 <div class="h-[calc(100vh-6rem)] flex flex-col justify-center items-center space-y-10">
@@ -13,7 +14,7 @@
   </section>
   <section class="space-y-2">
     <div class="flex justify-between">
-      <span>Working as Junior Data Scientist</span>
+      <span>👨‍💻 Working as Junior Data Scientist</span>
       <HoverCard.Root>
         <HoverCard.Trigger
           href="https://www.hammer-intel.com/"
@@ -44,7 +45,7 @@
       </HoverCard.Root>
     </div>
     <div class="flex justify-between space-x-10">
-      <span>Studying BSc Computer Science and Engineering</span>
+      <span>📚 Studying BSc Computer Science and Engineering</span>
 
       <HoverCard.Root>
         <HoverCard.Trigger
@@ -77,7 +78,19 @@
       </HoverCard.Root>
     </div>
   </section>
-  <section class="flex flex-col justify-center items-center space-y-5 pt-5">
+  <section class="max-w-lg text-center">
+    <div class="w-48">
+      <Separator />
+    </div>
+
+    Let me tell you a little bit <Link link="/about" label="about me" />, or have a look at
+    <Link link="/experiences" label="my experience" />. <br />You can take a look at my
+    <Link link="/education" label="education" />, or check out my past <Link
+      link="/projects"
+      label="projects"
+    />.
+  </section>
+  <!-- <section class="flex flex-col justify-center items-center space-y-5 pt-5">
     <h2 class="text-xl">Technologies</h2>
     <div class="w-48">
       <Separator />
@@ -106,5 +119,5 @@
       <span>Azure</span>
       <span>Docker</span>
     </div>
-  </section>
+  </section> -->
 </div>

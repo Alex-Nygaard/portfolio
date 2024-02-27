@@ -12,6 +12,7 @@
   } from 'svelte-hero-icons';
   import Progress from '$lib/components/ui/progress/progress.svelte';
   import { Separator } from '$lib/components/ui/separator';
+  import * as Tabs from '$lib/components/ui/tabs';
   // <span>Python</span>
   //     <span>Java</span>
   //     <span>JavaScript</span>
@@ -124,6 +125,38 @@
       value: 90
     }
   ];
+  let languages = [
+    { name: 'Python', icon: 'devicon-python-plain' },
+    { name: 'Java', icon: 'devicon-java-plain' },
+    { name: 'JavaScript', icon: 'devicon-javascript-plain' },
+    { name: 'TypeScript', icon: 'devicon-typescript-plain' },
+    { name: 'Svelte', icon: 'devicon-svelte-plain' },
+    { name: 'Go', icon: 'devicon-go-plain' },
+    { name: 'Scala', icon: 'devicon-scala-plain' },
+    { name: 'HTML', icon: 'devicon-html5-plain' },
+    { name: 'CSS', icon: 'devicon-css3-plain' }
+  ];
+
+  // let frameworks = ['React', 'Svelte', 'Node.js', 'Express', 'Flask', 'Spring'];
+  let frameworks = [
+    { name: 'React', icon: 'devicon-react-original' },
+    { name: 'Svelte', icon: 'devicon-svelte-plain' },
+    { name: 'Node.js', icon: 'devicon-nodejs-plain' },
+    { name: 'Express', icon: 'devicon-express-original' },
+    { name: 'Flask', icon: 'devicon-flask-original' },
+    { name: 'Spring', icon: 'devicon-spring-plain' }
+  ];
+
+  // let tools = ['PostgreSQL', 'Prisma', 'MongoDB', 'TensorFlow', 'AWS', 'Azure', 'Docker'];
+  let tools = [
+    { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
+    { name: 'Prisma', icon: 'devicon-prisma-plain' },
+    { name: 'MongoDB', icon: 'devicon-mongodb-plain' },
+    { name: 'TensorFlow', icon: 'devicon-tensorflow-plain' },
+    { name: 'AWS', icon: 'devicon-amazonwebservices-plain' },
+    { name: 'Azure', icon: 'devicon-azure-plain' },
+    { name: 'Docker', icon: 'devicon-docker-plain' }
+  ];
 </script>
 
 <div class="flex items-center justify-center p-10 h-[calc(100vh-6rem)]">
@@ -170,33 +203,58 @@
 
       <div class="flex flex-col w-5/6">
         <h1 class="text-xl font-semibold py-3">What's in my brain</h1>
-        <div class="flex space-x-2 items-center text-lg">
-          <Icon src={Language} outline size="18" />
-          <span>Languages</span>
-        </div>
-        <div>
-          <span>Python</span>
-          <span>Java</span>
-          <span>JavaScript</span>
-          <span>TypeScript</span>
-        </div>
-        <span>Python</span>
-        <span>Java</span>
-        <div class="flex space-x-2 items-center text-lg">
-          <Icon src={CubeTransparent} outline size="18" />
-          <span>Frameworks</span>
-        </div>
-        <div class="flex space-x-2 items-center text-lg">
-          <Icon src={Wrench} outline size="18" />
-          <span>Tools</span>
-        </div>
-
-        <!-- {#each technologies as tech}
-          <div class="flex items-center justify-between w-1/2 pr-8">
-            <span>{tech.name}</span>
-            <Progress value={tech.value} max={100} class="h-1 w-1/2" />
-          </div>
-        {/each} -->
+        <Tabs.Root value="languages" class="w-[400px]">
+          <Tabs.List>
+            <Tabs.Trigger value="languages">
+              <div class="flex space-x-2 items-center">
+                <Icon src={Language} outline size="18" />
+                <span>Languages</span>
+              </div>
+            </Tabs.Trigger>
+            <Tabs.Trigger value="frameworks">
+              <div class="flex space-x-2 items-center">
+                <Icon src={CubeTransparent} outline size="18" />
+                <span>Frameworks</span>
+              </div>
+            </Tabs.Trigger>
+            <Tabs.Trigger value="tools">
+              <div class="flex space-x-2 items-center">
+                <Icon src={Wrench} outline size="18" />
+                <span>Tools</span>
+              </div>
+            </Tabs.Trigger>
+          </Tabs.List>
+          <Tabs.Content value="languages">
+            <div class="text-gray-300 flex space-x-3">
+              {#each languages as lang}
+                <div class="flex items-center space-x-2">
+                  <i class={lang.icon}></i>
+                  <span class="text-gray-300">{lang.name}</span>
+                </div>
+              {/each}
+            </div>
+          </Tabs.Content>
+          <Tabs.Content value="frameworks">
+            <div class="text-gray-300 flex space-x-3">
+              {#each frameworks as fw}
+                <div class="flex items-center space-x-2">
+                  <i class={fw.icon}></i>
+                  <span class="text-gray-300">{fw.name}</span>
+                </div>
+              {/each}
+            </div>
+          </Tabs.Content>
+          <Tabs.Content value="tools">
+            <div class="text-gray-300 flex space-x-3">
+              {#each tools as tool}
+                <div class="flex items-center space-x-2">
+                  <i class={tool.icon}></i>
+                  <span class="text-gray-300">{tool.name}</span>
+                </div>
+              {/each}
+            </div>
+          </Tabs.Content>
+        </Tabs.Root>
       </div>
     </div>
     <div class="w-64 h-64">

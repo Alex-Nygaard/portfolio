@@ -159,17 +159,20 @@
   ];
 </script>
 
-<div class="flex items-center justify-center p-10 h-[calc(100vh-6rem)]">
+<div class="flex items-center justify-center p-10">
   <div
-    class="flex flex-row items-center justify-between bg-slate-900 shadow-lg rounded-lg overflow-hidden w-11/12"
+    class="flex flex-wrap md:flex-nowrap justify-between bg-slate-900 shadow-lg rounded-lg overflow-hidden w-full"
   >
-    <div class="flex flex-col p-8 w-3/4">
+    <div class="h-full bg-red-700 flex-shrink-0">
+      <img src={pfpSource} alt="Profile" class="w-96 h-auto" />
+    </div>
+    <div class="flex flex-col bg-green-700 w-full min-w-96 p-5">
       <h2 class="text-2xl font-semibold">About Me</h2>
-      <p class="mt-2 text-gray-400">
+      <p class="text-gray-400 min-w-0">
         Computer Science student at the Technical University of Delft. I like
       </p>
-      <div class="flex flex-wrap">
-        <div class="bg-gray-800 w-fit p-3 space-y-2 rounded-lg text-md m-4">
+      <div class="flex flex-wrap justify-center">
+        <div class="bg-gray-800 w-72 p-3 space-y-2 rounded-lg text-md m-4">
           <div class="flex space-x-2">
             <Icon src={AcademicCap} outline size="24" />
             <span>Technical University of Delft</span>
@@ -184,7 +187,7 @@
           </div>
           <Progress value={83} max={100} class="h-1 my-1" />
         </div>
-        <div class="bg-gray-800 w-fit p-3 space-y-2 rounded-lg text-md m-4">
+        <div class="bg-gray-800 w-72 p-3 space-y-2 rounded-lg text-md m-4">
           <div class="flex space-x-2">
             <Icon src={Briefcase} outline size="24" />
             <span>Hammer Market Intelligence</span>
@@ -201,9 +204,9 @@
         </div>
       </div>
 
-      <div class="flex flex-col w-5/6">
-        <h1 class="text-xl font-semibold py-3">What's in my brain</h1>
-        <Tabs.Root value="languages" class="w-[400px]">
+      <div class="flex flex-col font-hack">
+        <h1 class="text-xl font-semibold py-3 font-sans">What's in my brain</h1>
+        <Tabs.Root value="languages" class="">
           <Tabs.List>
             <Tabs.Trigger value="languages">
               <div class="flex space-x-2 items-center">
@@ -224,41 +227,40 @@
               </div>
             </Tabs.Trigger>
           </Tabs.List>
-          <Tabs.Content value="languages">
-            <div class="text-gray-300 flex space-x-3">
-              {#each languages as lang}
-                <div class="flex items-center space-x-2">
-                  <i class={lang.icon}></i>
-                  <span class="text-gray-300">{lang.name}</span>
-                </div>
-              {/each}
-            </div>
-          </Tabs.Content>
-          <Tabs.Content value="frameworks">
-            <div class="text-gray-300 flex space-x-3">
-              {#each frameworks as fw}
-                <div class="flex items-center space-x-2">
-                  <i class={fw.icon}></i>
-                  <span class="text-gray-300">{fw.name}</span>
-                </div>
-              {/each}
-            </div>
-          </Tabs.Content>
-          <Tabs.Content value="tools">
-            <div class="text-gray-300 flex space-x-3">
-              {#each tools as tool}
-                <div class="flex items-center space-x-2">
-                  <i class={tool.icon}></i>
-                  <span class="text-gray-300">{tool.name}</span>
-                </div>
-              {/each}
-            </div>
-          </Tabs.Content>
+          <div class="p-2">
+            <Tabs.Content value="languages">
+              <div class="text-gray-300 flex flex-wrap">
+                {#each languages as lang}
+                  <div class="flex items-center space-x-2 mx-2 my-1">
+                    <i class={lang.icon}></i>
+                    <span class="text-gray-300">{lang.name}</span>
+                  </div>
+                {/each}
+              </div>
+            </Tabs.Content>
+            <Tabs.Content value="frameworks">
+              <div class="text-gray-300 flex flex-wrap">
+                {#each frameworks as fw}
+                  <div class="flex items-center space-x-2 mx-2 my-1">
+                    <i class={fw.icon}></i>
+                    <span class="text-gray-300">{fw.name}</span>
+                  </div>
+                {/each}
+              </div>
+            </Tabs.Content>
+            <Tabs.Content value="tools">
+              <div class="text-gray-300 flex flex-wrap">
+                {#each tools as tool}
+                  <div class="flex items-center space-x-2 mx-2 my-1">
+                    <i class={tool.icon}></i>
+                    <span class="text-gray-300">{tool.name}</span>
+                  </div>
+                {/each}
+              </div>
+            </Tabs.Content>
+          </div>
         </Tabs.Root>
       </div>
-    </div>
-    <div class="w-64 h-64">
-      <img src={pfpSource} alt="Profile" class="object-cover w-full h-full" />
     </div>
   </div>
 </div>

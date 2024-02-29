@@ -122,23 +122,6 @@
                     {/each}
                   </div>
                 </div>
-                <!-- <Accordion.Root>
-                  <Accordion.Item value={quarter}>
-                    <Accordion.Trigger>
-                      <div class="flex space-x-2 items-center">
-                        <Icon src={CalendarDays} outline size="18" />
-                        <span>{quarter}</span>
-                      </div>
-                    </Accordion.Trigger>
-                    <Accordion.Content>
-                      <ul class="list-disc list-inside">
-                        {#each courses as course}
-                          <li>{course}</li>
-                        {/each}
-                      </ul>
-                    </Accordion.Content>
-                  </Accordion.Item>
-                </Accordion.Root> -->
               {/each}
             </div>
           </Tabs.Content>

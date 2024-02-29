@@ -7,7 +7,7 @@
 </script>
 
 <div class="h-[calc(100vh-6rem)] flex flex-col justify-center items-center space-y-10">
-  <h1 class="text-8xl font-semibold">Hi, I'm Alex<span class="text-blue-500">.</span></h1>
+  <h1 class="text-8xl font-semibold">Hi, I'm Alex<span class="text-blue-600">.</span></h1>
   <section class="flex space-x-5">
     <Button href="/cv" variant="outline">Download CV</Button>
     <Button href="/contact">Contact</Button>

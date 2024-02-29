@@ -12,86 +12,6 @@
   import martianImage from '$lib/images/projects/martian.jpg';
 </script>
 
-<!--
-  <Project
-                    title="Quizzz app"
-                    type="Object Oriented Programming Project"
-                    img={QuizzzImage}
-                    tech={[FaJava, SiSpring]}
-                    gitlink="https://github.com/Alex-Nygaard/OOPP-Quizzz"
-                />
-                <Project
-                    title="Marketplace platform"
-                    type="Computer Science class project"
-                    img={MarketplaceImage}
-                    tech={[
-                        FaPython,
-                        AiFillHtml5,
-                        SiJavascript,
-                        DiCss3,
-                        DiSqllite,
-                    ]}
-                    gitlink="https://github.com/Alex-Nygaard/Marketplace-platform"
-                />
-                <Project
-                    title="A comparison study on detection of Deepfakes using ANNs"
-                    type="Deep learning research project"
-                    img={EE}
-                    tech={[FaPython, SiTensorflow]}
-                    gitlink="https://github.com/Alex-Nygaard/EE-Project"
-                />
-                <Project
-                    title="Portfolio"
-                    type="This website"
-                    img={Portfolio}
-                    tech={[
-                        FaReact,
-                        AiFillHtml5,
-                        SiJavascript,
-                        DiCss3,
-                        FaNodeJs,
-                        VscAzure,
-                    ]}
-                    gitlink="https://github.com/Alex-Nygaard/portfolio"
-                />
-                <Project
-                    title="Memory Game"
-                    type="Web Technology class project"
-                    img={Memory}
-                    tech={[AiFillHtml5, SiJavascript, DiCss3, FaNodeJs]}
-                    gitlink="https://github.com/Alex-Nygaard/MemoryGame"
-                />
-
-                {/* <Project
-                    title="ISAKNOW"
-                    type="Creativity, Activity and Service Project"
-                    img={ISAKNOWImage}
-                    tech={[
-                        FaPython,
-                        AiFillHtml5,
-                        SiJavascript,
-                        DiCss3,
-                        DiRasberryPi,
-                    ]}
-                /> */}
-
-                <Project
-                    title="Book inventory"
-                    type="Computer Science class project"
-                    img={BookInventory}
-                    tech={[FaPython]}
-                    gitlink="https://github.com/Alex-Nygaard/Book-Inventory"
-                />
-
-                <Project
-                    title="Martian IOT communication"
-                    type="Computer Science class project"
-                    img={Martian}
-                    tech={[SiCplusplus]}
-                    gitlink="https://github.com/Alex-Nygaard/martianUnit2Project"
-                />
--->
-
 <div class="w-full flex flex-wrap items-center justify-center">
   <Project
     name="Quizzz app"
@@ -99,7 +19,7 @@
     image={quizzzImage}
     technologies={['java', 'spring']}
     link="https://github.com/Alex-Nygaard/OOPP-Quizzz"
-    dates="August 2021 - June 2023"
+    dates="September 2021 - February 2022"
   />
   <Project
     name="Marketplace platform"
@@ -107,7 +27,7 @@
     image={tudelftCampus}
     technologies={['python', 'flask', 'html', 'css', 'sqlite']}
     link="https://github.com/Alex-Nygaard/Marketplace-platform"
-    dates="August 2021 - June 2023"
+    dates="November 2020 - May 2021"
   />
   <Project
     name="A comparison study on detection of Deepfakes using ANNs"
@@ -115,7 +35,7 @@
     image={eeImage}
     technologies={['python', 'tensorflow']}
     link="https://github.com/Alex-Nygaard/EE-Project"
-    dates="August 2021 - June 2023"
+    dates="February 2020 - September 2020"
   />
   <Project
     name="Portfolio"
@@ -123,7 +43,7 @@
     image={portfolioImage}
     technologies={['svelte', 'typescript', 'tailwind', 'heroku']}
     link="https://github.com/Alex-Nygaard/portfolio"
-    dates="August 2021 - June 2023"
+    dates="December 2022 - present"
   />
   <Project
     name="Memory Game"
@@ -131,7 +51,7 @@
     image={memoryImage}
     technologies={['html', 'css', 'javascript', 'nodejs']}
     link="https://github.com/Alex-Nygaard/MemoryGame"
-    dates="August 2021 - June 2023"
+    dates="November 2021 - January 2022"
   />
   <Project
     name="Book inventory"
@@ -139,7 +59,7 @@
     image={bookInventoryImage}
     technologies={['python']}
     link="https://github.com/Alex-Nygaard/Book-Inventory"
-    dates="August 2021 - June 2023"
+    dates="December 2019 - March 2020"
   />
   <Project
     name="Martian IOT communication"
@@ -147,6 +67,6 @@
     image={martianImage}
     technologies={['cpp']}
     link="https://github.com/Alex-Nygaard/martianUnit2Project"
-    dates="August 2021 - June 2023"
+    dates="September 2019 - December 2019"
   />
 </div>

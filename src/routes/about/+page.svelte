@@ -38,10 +38,11 @@
       <img src={pfpSource} alt="Profile" class="w-96 h-auto" />
       <!-- TODO: replace with https://sharing-with-alex.s3.eu-north-1.amazonaws.com/images/pfp-transparent.png-->
     </div>
-    <div class="flex flex-col min-w-80 p-5">
+    <div class="flex flex-col min-w-80 p-5 max-w-[46rem]">
       <h2 class="text-2xl font-semibold">About Me</h2>
       <p class="text-gray-400 min-w-0">
-        Computer Science student at the Technical University of Delft. I like
+        Computer Science student at the Technical University of Delft. I like working on the
+        backend, using cloud technologies and learning about machine learning.
       </p>
       <div class="flex flex-wrap justify-center">
         <div class="bg-gray-800 w-72 p-3 space-y-2 rounded-lg text-md m-2">

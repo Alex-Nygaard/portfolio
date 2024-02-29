@@ -6,8 +6,10 @@
   import Link from '../components/Link.svelte';
 </script>
 
-<div class="h-[calc(100vh-6rem)] flex flex-col justify-center items-center space-y-10">
-  <h1 class="text-8xl font-semibold">Hi, I'm Alex<span class="text-blue-600">.</span></h1>
+<div class="h-[calc(100vh-6rem)] flex flex-col justify-center items-center space-y-10 p-5">
+  <h1 class="text-8xl max-w-[80%] text-center font-semibold">
+    Hi, I'm Alex<span class="text-blue-600">.</span>
+  </h1>
   <section class="flex space-x-5">
     <Button href="/cv" variant="outline">Download CV</Button>
     <Button href="/contact">Contact</Button>
@@ -78,46 +80,18 @@
       </HoverCard.Root>
     </div>
   </section>
-  <section class="max-w-lg text-center">
-    <div class="w-48">
+  <section class="max-w-lg flex flex-col items-center space-y-1">
+    <div class="w-48 mb-7">
       <Separator />
     </div>
 
-    Let me tell you a little bit <Link link="/about" label="about me" />, or have a look at
-    <Link link="/experiences" label="my experience" />. <br />You can take a look at my
-    <Link link="/education" label="education" />, or check out my past <Link
-      link="/projects"
-      label="projects"
-    />.
+    <span>
+      Let me tell you a little bit <Link link="/about" label="about me" />, or have a look at
+      <Link link="/work" label="my work" />.
+    </span>
+    <span>
+      You can take a look at my <Link link="/education" label="education" />, or check out my past
+      <Link link="/projects" label="projects" />.
+    </span>
   </section>
-  <!-- <section class="flex flex-col justify-center items-center space-y-5 pt-5">
-    <h2 class="text-xl">Technologies</h2>
-    <div class="w-48">
-      <Separator />
-    </div>
-    <div class="flex flex-wrap max-w-md h-7 items-center justify-center space-x-7 text-lg">
-      <span>Python</span>
-      <span>Java</span>
-      <span>JavaScript</span>
-      <span>TypeScript</span>
-      <span>Svelte</span>
-      <span>Go</span>
-      <span>Scala</span>
-      <span>PostgreSQL</span>
-      <span>Prisma</span>
-      <span>MongoDB</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>React</span>
-      <span>Vue</span>
-      <span>Node.js</span>
-      <span>Express</span>
-      <span>Flask</span>
-      <span>Spring</span>
-      <span>TensorFlow</span>
-      <span>AWS</span>
-      <span>Azure</span>
-      <span>Docker</span>
-    </div>
-  </section> -->
 </div>

@@ -107,7 +107,7 @@ let languages = [
     },
     tensorflow: {
       name: 'TensorFlow',
-      icon: 'devicon-tensorflow-plain'
+      icon: 'devicon-tensorflow-original'
     },
     aws: {
       name: 'AWS',
@@ -128,6 +128,26 @@ let languages = [
     reactnative: {
       name: 'React Native',
       icon: 'devicon-react-original'
+    },
+    sqlite: {
+      name: 'SQLite',
+      icon: 'devicon-sqlite-plain'
+    },
+    raspberry: {
+      name: 'Raspberry Pi',
+      icon: 'devicon-raspberrypi-plain'
+    },
+    heroku: {
+      name: 'Heroku',
+      icon: 'devicon-heroku-plain'
+    },
+    tailwind: {
+      name: 'Tailwind',
+      icon: 'devicon-tailwindcss-plain'
+    },
+    cpp: {
+      name: 'C++',
+      icon: 'devicon-cplusplus-plain'
     }
   };
 
@@ -139,7 +159,7 @@ let languages = [
 </script>
 
 <span class="inline-block">
-  <div class="flex items-center space-x-2 mx-1">
+  <div class="flex items-center space-x-1 mx-1">
     <i class={selectedVariant.icon}></i>
     <span class="text-gray-300">{selectedVariant.name}</span>
   </div>

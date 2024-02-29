@@ -13,166 +13,38 @@
   import Progress from '$lib/components/ui/progress/progress.svelte';
   import { Separator } from '$lib/components/ui/separator';
   import * as Tabs from '$lib/components/ui/tabs';
-  // <span>Python</span>
-  //     <span>Java</span>
-  //     <span>JavaScript</span>
-  //     <span>TypeScript</span>
-  //     <span>Svelte</span>
-  //     <span>Go</span>
-  //     <span>Scala</span>
-  //     <span>PostgreSQL</span>
-  //     <span>Prisma</span>
-  //     <span>MongoDB</span>
-  //     <span>HTML</span>
-  //     <span>CSS</span>
-  //     <span>React</span>
-  //     <span>Vue</span>
-  //     <span>Node.js</span>
-  //     <span>Express</span>
-  //     <span>Flask</span>
-  //     <span>Spring</span>
-  //     <span>TensorFlow</span>
-  //     <span>AWS</span>
-  //     <span>Azure</span>
-  //     <span>Docker</span>
-  let technologies = [
-    {
-      name: 'Python',
-      value: 90
-    },
-    {
-      name: 'Java',
-      value: 90
-    },
-    {
-      name: 'JavaScript',
-      value: 90
-    },
-    {
-      name: 'TypeScript',
-      value: 90
-    },
-    {
-      name: 'Svelte',
-      value: 90
-    },
-    {
-      name: 'Go',
-      value: 90
-    },
-    {
-      name: 'Scala',
-      value: 90
-    },
-    {
-      name: 'PostgreSQL',
-      value: 90
-    },
-    {
-      name: 'Prisma',
-      value: 90
-    },
-    {
-      name: 'MongoDB',
-      value: 90
-    },
-    {
-      name: 'HTML',
-      value: 90
-    },
-    {
-      name: 'CSS',
-      value: 90
-    },
-    {
-      name: 'React',
-      value: 90
-    },
-    {
-      name: 'Vue',
-      value: 90
-    },
-    {
-      name: 'Node.js',
-      value: 90
-    },
-    {
-      name: 'Express',
-      value: 90
-    },
-    {
-      name: 'Flask',
-      value: 90
-    },
-    {
-      name: 'Spring',
-      value: 90
-    },
-    {
-      name: 'TensorFlow',
-      value: 90
-    },
-    {
-      name: 'AWS',
-      value: 90
-    },
-    {
-      name: 'Azure',
-      value: 90
-    },
-    {
-      name: 'Docker',
-      value: 90
-    }
-  ];
+  import Tech from '../../components/Tech.svelte';
+
   let languages = [
-    { name: 'Python', icon: 'devicon-python-plain' },
-    { name: 'Java', icon: 'devicon-java-plain' },
-    { name: 'JavaScript', icon: 'devicon-javascript-plain' },
-    { name: 'TypeScript', icon: 'devicon-typescript-plain' },
-    { name: 'Svelte', icon: 'devicon-svelte-plain' },
-    { name: 'Go', icon: 'devicon-go-plain' },
-    { name: 'Scala', icon: 'devicon-scala-plain' },
-    { name: 'HTML', icon: 'devicon-html5-plain' },
-    { name: 'CSS', icon: 'devicon-css3-plain' }
+    'python',
+    'java',
+    'javascript',
+    'typescript',
+    'svelte',
+    'go',
+    'scala',
+    'html',
+    'css'
   ];
-
-  // let frameworks = ['React', 'Svelte', 'Node.js', 'Express', 'Flask', 'Spring'];
-  let frameworks = [
-    { name: 'React', icon: 'devicon-react-original' },
-    { name: 'Svelte', icon: 'devicon-svelte-plain' },
-    { name: 'Node.js', icon: 'devicon-nodejs-plain' },
-    { name: 'Express', icon: 'devicon-express-original' },
-    { name: 'Flask', icon: 'devicon-flask-original' },
-    { name: 'Spring', icon: 'devicon-spring-plain' }
-  ];
-
-  // let tools = ['PostgreSQL', 'Prisma', 'MongoDB', 'TensorFlow', 'AWS', 'Azure', 'Docker'];
-  let tools = [
-    { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
-    { name: 'Prisma', icon: 'devicon-prisma-plain' },
-    { name: 'MongoDB', icon: 'devicon-mongodb-plain' },
-    { name: 'TensorFlow', icon: 'devicon-tensorflow-plain' },
-    { name: 'AWS', icon: 'devicon-amazonwebservices-plain' },
-    { name: 'Azure', icon: 'devicon-azure-plain' },
-    { name: 'Docker', icon: 'devicon-docker-plain' }
-  ];
+  let frameworks = ['react', 'svelte', 'nodejs', 'express', 'flask', 'spring'];
+  let tools = ['postgresql', 'prisma', 'mongodb', 'tensorflow', 'aws', 'azure', 'docker'];
 </script>
 
 <div class="flex items-center justify-center p-10">
   <div
-    class="flex flex-wrap md:flex-nowrap justify-between bg-slate-900 shadow-lg rounded-lg overflow-hidden w-full"
+    class="flex flex-wrap min-[900px]:flex-nowrap justify-center min-[900px]:justify-evenly items-center bg-gray-900 shadow-lg rounded-lg overflow-hidden w-fit"
   >
-    <div class="h-full bg-red-700 flex-shrink-0">
+    <div class="h-full flex-shrink-0">
       <img src={pfpSource} alt="Profile" class="w-96 h-auto" />
+      <!-- TODO: replace with https://sharing-with-alex.s3.eu-north-1.amazonaws.com/images/pfp-transparent.png-->
     </div>
-    <div class="flex flex-col bg-green-700 w-full min-w-96 p-5">
+    <div class="flex flex-col min-w-80 p-5">
       <h2 class="text-2xl font-semibold">About Me</h2>
       <p class="text-gray-400 min-w-0">
         Computer Science student at the Technical University of Delft. I like
       </p>
       <div class="flex flex-wrap justify-center">
-        <div class="bg-gray-800 w-72 p-3 space-y-2 rounded-lg text-md m-4">
+        <div class="bg-gray-800 w-72 p-3 space-y-2 rounded-lg text-md m-2">
           <div class="flex space-x-2">
             <Icon src={AcademicCap} outline size="24" />
             <span>Technical University of Delft</span>
@@ -187,7 +59,7 @@
           </div>
           <Progress value={83} max={100} class="h-1 my-1" />
         </div>
-        <div class="bg-gray-800 w-72 p-3 space-y-2 rounded-lg text-md m-4">
+        <div class="bg-gray-800 w-72 p-3 space-y-2 rounded-lg text-md m-2">
           <div class="flex space-x-2">
             <Icon src={Briefcase} outline size="24" />
             <span>Hammer Market Intelligence</span>
@@ -198,14 +70,14 @@
           </div>
           <div class="flex space-x-2 justify-end text-xs text-gray-400">
             <Icon src={CalendarDays} outline size="16" />
-            <span>March 2023 - present</span>
+            <span>April 2023 - present</span>
           </div>
           <Progress value={100} max={100} class="h-1 my-1" />
         </div>
       </div>
 
-      <div class="flex flex-col font-hack">
-        <h1 class="text-xl font-semibold py-3 font-sans">What's in my brain</h1>
+      <div class="flex flex-col font-hack h-48 w-full">
+        <h1 class="text-lg font-semibold py-3 font-sans">🧠 Some stuff I know</h1>
         <Tabs.Root value="languages" class="">
           <Tabs.List>
             <Tabs.Trigger value="languages">
@@ -227,34 +99,25 @@
               </div>
             </Tabs.Trigger>
           </Tabs.List>
-          <div class="p-2">
+          <div class="p-2 max-w-[38rem]">
             <Tabs.Content value="languages">
               <div class="text-gray-300 flex flex-wrap">
                 {#each languages as lang}
-                  <div class="flex items-center space-x-2 mx-2 my-1">
-                    <i class={lang.icon}></i>
-                    <span class="text-gray-300">{lang.name}</span>
-                  </div>
+                  <Tech variant={lang} />
                 {/each}
               </div>
             </Tabs.Content>
             <Tabs.Content value="frameworks">
               <div class="text-gray-300 flex flex-wrap">
                 {#each frameworks as fw}
-                  <div class="flex items-center space-x-2 mx-2 my-1">
-                    <i class={fw.icon}></i>
-                    <span class="text-gray-300">{fw.name}</span>
-                  </div>
+                  <Tech variant={fw} />
                 {/each}
               </div>
             </Tabs.Content>
             <Tabs.Content value="tools">
               <div class="text-gray-300 flex flex-wrap">
                 {#each tools as tool}
-                  <div class="flex items-center space-x-2 mx-2 my-1">
-                    <i class={tool.icon}></i>
-                    <span class="text-gray-300">{tool.name}</span>
-                  </div>
+                  <Tech variant={tool} />
                 {/each}
               </div>
             </Tabs.Content>

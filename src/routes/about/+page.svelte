@@ -32,7 +32,7 @@
 
 <div class="flex items-center justify-center p-10">
   <div
-    class="flex flex-wrap min-[900px]:flex-nowrap justify-center min-[900px]:justify-evenly items-center bg-gray-900 shadow-lg rounded-lg overflow-hidden w-fit"
+    class="flex flex-wrap min-[900px]:flex-nowrap justify-center min-[900px]:justify-evenly items-center bg-gray-900 shadow-lg rounded-lg overflow-hidden max-w-full"
   >
     <div class="h-full flex-shrink-0">
       <img src={pfpSource} alt="Profile" class="w-96 h-auto" />
@@ -41,39 +41,39 @@
     <div class="flex flex-col min-w-80 p-5 max-w-[46rem]">
       <h2 class="text-2xl font-semibold">About Me</h2>
       <p class="text-gray-400 min-w-0">
-        Computer Science student at the Technical University of Delft. I like working on the
-        backend, using cloud technologies and learning about machine learning.
+        Security and Cloud Computing student at Aalto University. I like working with backend
+        technologies, learning about cloud infrastructure and exploring machine learning topics.
       </p>
       <div class="flex flex-wrap justify-center">
         <div class="bg-gray-800 w-72 p-3 space-y-2 rounded-lg text-md m-2">
           <div class="flex space-x-2">
             <Icon src={AcademicCap} outline size="24" />
-            <span>Technical University of Delft</span>
+            <span>SECCLO Joint Master's Degree</span>
           </div>
           <div class="flex space-x-2 text-gray-300">
             <!-- <Icon src={BookOpen} outline size="24" /> -->
-            <span>Computer Science and Engineering</span>
+            <span>Security and Cloud Computing</span>
           </div>
           <div class="flex space-x-2 justify-end text-xs text-gray-400">
             <Icon src={CalendarDays} outline size="16" />
-            <span>August 2021 - June 2024 (exp.)</span>
+            <span>September 2024 - June 2026 (exp.)</span>
           </div>
-          <Progress value={83} max={100} class="h-1 my-1" />
+          <Progress value={5} max={100} class="h-1 my-1" />
         </div>
         <div class="bg-gray-800 w-72 p-3 space-y-2 rounded-lg text-md m-2">
           <div class="flex space-x-2">
             <Icon src={Briefcase} outline size="24" />
-            <span>Hammer Market Intelligence</span>
+            <span>Ardoq</span>
           </div>
           <div class="flex space-x-2 text-gray-300">
             <!-- <Icon src={BookOpen} outline size="24" /> -->
-            <span>Junior Data Scientist</span>
+            <span>Software Engineering Intern</span>
           </div>
           <div class="flex space-x-2 justify-end text-xs text-gray-400">
             <Icon src={CalendarDays} outline size="16" />
-            <span>April 2023 - present</span>
+            <span>July 2024 - August 2024 (exp.)</span>
           </div>
-          <Progress value={100} max={100} class="h-1 my-1" />
+          <Progress value={50} max={100} class="h-1 my-1" />
         </div>
       </div>
 

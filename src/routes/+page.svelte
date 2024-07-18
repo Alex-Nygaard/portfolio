@@ -1,5 +1,6 @@
 <script>
   import * as Avatar from '$lib/components/ui/avatar';
+  import Badge from '$lib/components/ui/badge/badge.svelte';
   import { Button } from '$lib/components/ui/button';
   import { Separator } from '$lib/components/ui/separator';
   import * as HoverCard from '$lib/components/ui/hover-card';
@@ -7,7 +8,7 @@
 </script>
 
 <div class="h-[calc(100vh-6rem)] flex flex-col justify-center items-center space-y-10 p-5">
-  <h1 class="text-8xl max-w-[80%] text-center font-semibold">
+  <h1 class="text-5xl sm:text-6xl md:text-8xl max-w-[80%] text-center font-semibold">
     Hi, I'm Alex<span class="text-blue-600">.</span>
   </h1>
   <section class="flex space-x-5">
@@ -19,72 +20,50 @@
     <Button href="/contact">Contact</Button>
   </section>
   <section class="space-y-2">
-    <div class="flex justify-between">
-      <span>👨‍💻 Working as Junior Data Scientist</span>
-      <HoverCard.Root>
-        <HoverCard.Trigger
-          href="https://www.hammer-intel.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="rounded-sm underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-black"
-        >
-          @Hammer
-        </HoverCard.Trigger>
-        <HoverCard.Content class="w-80">
-          <div class="flex justify-between space-x-4">
-            <Avatar.Root>
-              <Avatar.Image
-                src="https://pbs.twimg.com/profile_images/1069955395794464768/nk8aLWb1_400x400.jpg"
-                class="bg-white aspect-video"
-              />
-              <Avatar.Fallback>H</Avatar.Fallback>
-            </Avatar.Root>
-            <div class="space-y-1">
-              <h4 class="text-sm font-semibold">@Hammer Market Intelligence</h4>
-              <p class="text-sm">Arnhem, Netherlands.</p>
-              <div class="flex items-center pt-2">
-                <span class="text-xs text-muted-foreground">April 2023 - present</span>
-              </div>
-            </div>
-          </div>
-        </HoverCard.Content>
-      </HoverCard.Root>
+    <div class="flex justify-between space-x-2">
+      <span> 👨‍💻 Working as Software Engineering Intern </span>
+      <span class="text-gray-300 text-right flex justify-center items-center">
+        @Ardoq
+        <Avatar.Root class="h-6 w-6 ml-1">
+          <Avatar.Image
+            src="https://pbs.twimg.com/profile_images/1069955395794464768/nk8aLWb1_400x400.jpg"
+            class="bg-white aspect-square"
+          />
+          <Avatar.Fallback>A</Avatar.Fallback>
+        </Avatar.Root>
+      </span>
     </div>
     <div class="flex justify-between space-x-10">
-      <span>📚 Studying BSc Computer Science and Engineering</span>
-
-      <HoverCard.Root>
-        <HoverCard.Trigger
-          href="https://www.tudelft.nl/en/"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="rounded-sm underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-black"
-        >
-          @TUDelft
-        </HoverCard.Trigger>
-        <HoverCard.Content class="w-80">
-          <div class="flex justify-between space-x-4">
-            <Avatar.Root>
-              <Avatar.Image
-                src="https://pbs.twimg.com/profile_images/1601657243115692033/UapB2p-q_400x400.jpg"
-              />
-              <Avatar.Fallback>TUD</Avatar.Fallback>
-            </Avatar.Root>
-            <div class="space-y-1">
-              <h4 class="text-sm font-semibold">@TUDelft</h4>
-              <p class="text-sm">Technical University of Delft, Netherlands.</p>
-              <div class="flex items-center pt-2">
-                <!-- <Calendar class="mr-2 h-4 w-4 opacity-70" />{' '} -->
-                <span class="text-xs text-muted-foreground">August 2021 - June 2024 (exp.)</span>
-                <!-- <span class="text-xs text-muted-foreground"> Finishing June 2024 </span> -->
-              </div>
-            </div>
-          </div>
-        </HoverCard.Content>
-      </HoverCard.Root>
+      <span class="mr-16">📚 Studying MSc Security and Cloud Computing (SECCLO)</span>
+    </div>
+    <div class="flex justify-between">
+      <span class="ml-4">➾ 1st year <Badge class="mx-1" variant="secondary">Current</Badge></span>
+      <span class="text-gray-300 text-right flex justify-center items-center">
+        @Aalto University
+        <Avatar.Root class="h-6 w-6 ml-1">
+          <Avatar.Image
+            src="https://pbs.twimg.com/profile_images/1069955395794464768/nk8aLWb1_400x400.jpg"
+            class="bg-white aspect-square"
+          />
+          <Avatar.Fallback>A</Avatar.Fallback>
+        </Avatar.Root>
+      </span>
+    </div>
+    <div class="flex justify-between">
+      <span class="ml-4">➾ 2nd year</span>
+      <span class="text-gray-300 text-right flex justify-center items-center">
+        @Denmark's Technical University
+        <Avatar.Root class="h-6 w-6 ml-1">
+          <Avatar.Image
+            src="https://pbs.twimg.com/profile_images/1069955395794464768/nk8aLWb1_400x400.jpg"
+            class="bg-white aspect-square"
+          />
+          <Avatar.Fallback>D</Avatar.Fallback>
+        </Avatar.Root>
+      </span>
     </div>
   </section>
-  <section class="max-w-lg flex flex-col items-center space-y-1">
+  <section class="w-5/6 flex flex-col items-center space-y-1">
     <div class="w-48 mb-7">
       <Separator />
     </div>

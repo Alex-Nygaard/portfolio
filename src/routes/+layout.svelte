@@ -50,15 +50,25 @@
     {'<A />'}
   </a>
   <div class="sm:flex h-7 items-center hidden">
-    <Button href="/about" variant="ghost">About</Button>
+    <Button href="/about" variant="ghost">
+      <span class="underline">A</span>bout
+    </Button>
     <Separator orientation="vertical" />
-    <Button href="/work" variant="ghost">Work</Button>
+    <Button href="/work" variant="ghost">
+      <span class="underline">W</span>ork
+    </Button>
     <Separator orientation="vertical" />
-    <Button href="/education" variant="ghost">Education</Button>
+    <Button href="/education" variant="ghost">
+      <span class="underline">E</span>ducation
+    </Button>
     <Separator orientation="vertical" />
-    <Button href="/projects" variant="ghost">Projects</Button>
+    <Button href="/projects" variant="ghost">
+      <span class="underline">P</span>rojects
+    </Button>
     <Separator orientation="vertical" class="h-0" />
-    <Button href="/contact">Contact</Button>
+    <Button class="ml-2" href="/contact">
+      <span class="underline">C</span>ontact
+    </Button>
   </div>
   <div class="flex sm:hidden">
     <DropdownMenu.Root>

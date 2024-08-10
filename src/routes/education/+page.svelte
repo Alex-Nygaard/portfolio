@@ -13,61 +13,61 @@
     '2023-2024': [
       {
         quarter: 'Q1',
-        courses: ['Exchange Semester @ HKUST (HK)']
+        courses: ['Exchange Semester @ HKUST (HK)'],
       },
       {
         quarter: 'Q2',
-        courses: ['Exchange Semester @ HKUST (HK)']
+        courses: ['Exchange Semester @ HKUST (HK)'],
       },
       {
         quarter: 'Q3 (now)',
-        courses: ['Functional Programming', 'Collaborative AI', 'Human Computer Interaction']
-      }
+        courses: ['Functional Programming', 'Collaborative AI', 'Human Computer Interaction'],
+      },
     ],
     '2022-2023': [
       {
         quarter: 'Q1',
-        courses: ['Big Data Processing', 'Computer Graphics', 'Machine Learning']
+        courses: ['Big Data Processing', 'Computer Graphics', 'Machine Learning'],
       },
       {
         quarter: 'Q2',
-        courses: ['Algorithm Design', 'Data Mining', 'Software Engineering Methods']
+        courses: ['Algorithm Design', 'Data Mining', 'Software Engineering Methods'],
       },
       {
         quarter: 'Q3',
         courses: [
           'Automata Computability and Complexity',
           'Computational Intelligence',
-          'Concepts of Programming Languages'
-        ]
+          'Concepts of Programming Languages',
+        ],
       },
       {
         quarter: 'Q4',
-        courses: ['Software Project']
-      }
+        courses: ['Software Project'],
+      },
     ],
     '2021-2022': [
       {
         quarter: 'Q1',
-        courses: ['Computer Organisation', 'Object-oriented Programming', 'Reasoning and Logic']
+        courses: ['Computer Organisation', 'Object-oriented Programming', 'Reasoning and Logic'],
       },
       {
         quarter: 'Q2',
-        courses: ['Algorithms and Data Structures', 'Calculus', 'Web and Database Technology']
+        courses: ['Algorithms and Data Structures', 'Calculus', 'Web and Database Technology'],
       },
       {
         quarter: 'Q3',
-        courses: ['Information and Data Management', 'Linear Algebra', 'OOP Project']
+        courses: ['Information and Data Management', 'Linear Algebra', 'OOP Project'],
       },
       {
         quarter: 'Q4',
         courses: [
           'Computer Networks',
           'Probability Theory and Statistics',
-          'Software Quality and Testing'
-        ]
-      }
-    ]
+          'Software Quality and Testing',
+        ],
+      },
+    ],
   };
 </script>
 

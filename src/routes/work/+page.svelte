@@ -15,11 +15,11 @@
       location: 'Oslo, Norway',
       tech: {
         backend: ['clojure', 'redis', 'openai', 'docker'],
-        frontend: ['react', 'typescript', 'javascript']
+        frontend: ['react', 'typescript', 'javascript'],
       },
       time: 'April 2024 - June 2024 (3 months)',
       companyWebsite: '',
-      companyAvatarLink: ''
+      companyAvatarLink: '',
     },
     {
       role: 'Backend Developer (Working Student)',
@@ -28,11 +28,11 @@
       location: 'Amsterdam, Netherlands',
       tech: {
         backend: ['java'],
-        frontend: []
+        frontend: [],
       },
       time: 'April 2024 - June 2024 (3 months)',
       companyWebsite: '',
-      companyAvatarLink: ''
+      companyAvatarLink: '',
     },
     {
       role: 'Junior Data Scientist',
@@ -41,12 +41,12 @@
       location: 'Arnhem, Netherlands (hybrid)',
       tech: {
         backend: ['python', 'flask', 'selenium', 'docker'],
-        frontend: ['typescript', 'react']
+        frontend: ['typescript', 'react'],
       },
       time: 'April 2023 - April 2024 (1 year)',
       companyWebsite: 'https://www.hammer-intel.com/',
       companyAvatarLink:
-        'https://pbs.twimg.com/profile_images/1069955395794464768/nk8aLWb1_400x400.jpg'
+        'https://pbs.twimg.com/profile_images/1069955395794464768/nk8aLWb1_400x400.jpg',
     },
     {
       role: 'Full-Stack Software Engineering Intern',
@@ -55,12 +55,12 @@
       location: 'Rotterdam, Netherlands',
       tech: {
         backend: ['typescript', 'nodejs', 'prisma', 'postgresql', 'docker'],
-        frontend: ['typescript', 'react', 'reactnative']
+        frontend: ['typescript', 'react', 'reactnative'],
       },
       time: 'April 2023 - June 2023 (3 months)',
       companyWebsite: 'https://www.veraconnect.app/',
-      companyAvatarLink: 'https://www.veraconnect.app/logo.svg'
-    }
+      companyAvatarLink: 'https://www.veraconnect.app/logo.svg',
+    },
   ];
 </script>
 

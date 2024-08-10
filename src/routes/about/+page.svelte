@@ -8,7 +8,7 @@
     Briefcase,
     Language,
     Wrench,
-    CubeTransparent
+    CubeTransparent,
   } from 'svelte-hero-icons';
   import Progress from '$lib/components/ui/progress/progress.svelte';
   import { Separator } from '$lib/components/ui/separator';
@@ -24,7 +24,7 @@
     'go',
     'scala',
     'html',
-    'css'
+    'css',
   ];
   let frameworks = ['react', 'svelte', 'nodejs', 'express', 'flask', 'spring'];
   let tools = ['postgresql', 'prisma', 'mongodb', 'tensorflow', 'aws', 'azure', 'docker'];

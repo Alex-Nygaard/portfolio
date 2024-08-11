@@ -20,8 +20,12 @@
         courses: ['Exchange Semester @ HKUST (HK)'],
       },
       {
-        quarter: 'Q3 (now)',
+        quarter: 'Q3',
         courses: ['Functional Programming', 'Collaborative AI', 'Human Computer Interaction'],
+      },
+      {
+        quarter: 'Q4',
+        courses: ['Thesis Project:', 'Improving the Accuracy of Federated Learning Simulations'],
       },
     ],
     '2022-2023': [

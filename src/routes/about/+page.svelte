@@ -3,7 +3,6 @@
   import {
     Icon,
     AcademicCap,
-    BookOpen,
     CalendarDays,
     Briefcase,
     Language,
@@ -11,9 +10,9 @@
     CubeTransparent,
   } from 'svelte-hero-icons';
   import Progress from '$lib/components/ui/progress/progress.svelte';
-  import { Separator } from '$lib/components/ui/separator';
   import * as Tabs from '$lib/components/ui/tabs';
-  import Tech from '../../components/Tech.svelte';
+  import Tech from '$components/tech/Tech.svelte';
+  import TechContainer from '$components/tech/TechContainer.svelte';
 
   let languages = [
     'python',
@@ -23,11 +22,13 @@
     'svelte',
     'go',
     'scala',
+    'clojure',
+    'haskell',
     'html',
     'css',
-  ];
-  let frameworks = ['react', 'svelte', 'nodejs', 'express', 'flask', 'spring'];
-  let tools = ['postgresql', 'prisma', 'mongodb', 'tensorflow', 'aws', 'azure', 'docker'];
+  ].sort();
+  let frameworks = ['react', 'svelte', 'nodejs', 'express', 'flask', 'spring'].sort();
+  let tools = ['postgresql', 'prisma', 'mongodb', 'tensorflow', 'aws', 'azure', 'docker'].sort();
 </script>
 
 <div class="flex items-center justify-center p-10">
@@ -73,7 +74,7 @@
             <Icon src={CalendarDays} outline size="16" />
             <span>July 2024 - August 2024 (exp.)</span>
           </div>
-          <Progress value={50} max={100} class="h-1 my-1" />
+          <Progress value={80} max={100} class="h-1 my-1" />
         </div>
       </div>
 
@@ -102,25 +103,13 @@
           </Tabs.List>
           <div class="p-2 max-w-[38rem]">
             <Tabs.Content value="languages">
-              <div class="text-gray-300 flex flex-wrap">
-                {#each languages as lang}
-                  <Tech variant={lang} />
-                {/each}
-              </div>
+              <TechContainer variants={languages} />
             </Tabs.Content>
             <Tabs.Content value="frameworks">
-              <div class="text-gray-300 flex flex-wrap">
-                {#each frameworks as fw}
-                  <Tech variant={fw} />
-                {/each}
-              </div>
+              <TechContainer variants={frameworks} />
             </Tabs.Content>
             <Tabs.Content value="tools">
-              <div class="text-gray-300 flex flex-wrap">
-                {#each tools as tool}
-                  <Tech variant={tool} />
-                {/each}
-              </div>
+              <TechContainer variants={tools} />
             </Tabs.Content>
           </div>
         </Tabs.Root>

@@ -1,42 +1,16 @@
 <script lang="ts">
+  import ddLogo from '$lib/images/logos/tech/dd.svg';
+  import teamCityLogo from '$lib/images/logos/tech/teamcity.svg';
+
   export let variant: string;
 
-  /*
-let languages = [
-    { name: 'Python', icon: 'devicon-python-plain' },
-    { name: 'Java', icon: 'devicon-java-plain' },
-    { name: 'JavaScript', icon: 'devicon-javascript-plain' },
-    { name: 'TypeScript', icon: 'devicon-typescript-plain' },
-    { name: 'Svelte', icon: 'devicon-svelte-plain' },
-    { name: 'Go', icon: 'devicon-go-plain' },
-    { name: 'Scala', icon: 'devicon-scala-plain' },
-    { name: 'HTML', icon: 'devicon-html5-plain' },
-    { name: 'CSS', icon: 'devicon-css3-plain' }
-  ];
+  type Variant = {
+    name: string;
+    icon?: string;
+    customIcon?: string;
+  };
 
-  // let frameworks = ['React', 'Svelte', 'Node.js', 'Express', 'Flask', 'Spring'];
-  let frameworks = [
-    { name: 'React', icon: 'devicon-react-original' },
-    { name: 'Svelte', icon: 'devicon-svelte-plain' },
-    { name: 'Node.js', icon: 'devicon-nodejs-plain' },
-    { name: 'Express', icon: 'devicon-express-original' },
-    { name: 'Flask', icon: 'devicon-flask-original' },
-    { name: 'Spring', icon: 'devicon-spring-plain' }
-  ];
-
-  // let tools = ['PostgreSQL', 'Prisma', 'MongoDB', 'TensorFlow', 'AWS', 'Azure', 'Docker'];
-  let tools = [
-    { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
-    { name: 'Prisma', icon: 'devicon-prisma-plain' },
-    { name: 'MongoDB', icon: 'devicon-mongodb-plain' },
-    { name: 'TensorFlow', icon: 'devicon-tensorflow-plain' },
-    { name: 'AWS', icon: 'devicon-amazonwebservices-plain' },
-    { name: 'Azure', icon: 'devicon-azure-plain' },
-    { name: 'Docker', icon: 'devicon-docker-plain' }
-  ];
-  */
-
-  let variantOptions: { [key: string]: { name: string; icon: string } } = {
+  let variantOptions: { [key: string]: Variant } = {
     python: {
       name: 'Python',
       icon: 'devicon-python-plain',
@@ -149,18 +123,72 @@ let languages = [
       name: 'C++',
       icon: 'devicon-cplusplus-plain',
     },
+    clojure: {
+      name: 'Clojure',
+      icon: 'devicon-clojure-line',
+    },
+    redis: {
+      name: 'Redis',
+      icon: 'devicon-redis-plain',
+    },
+    haskell: {
+      name: 'Haskell',
+      icon: 'devicon-haskell-plain',
+    },
+    jira: {
+      name: 'Jira',
+      icon: 'devicon-jira-plain',
+    },
+    prometheus: {
+      name: 'Prometheus',
+      icon: 'devicon-prometheus-original',
+    },
+    grafana: {
+      name: 'Grafana',
+      icon: 'devicon-grafana-plain',
+    },
+    datadog: {
+      name: 'Datadog',
+      customIcon: ddLogo,
+    },
+    teamcity: {
+      name: 'TeamCity',
+      customIcon: teamCityLogo,
+    },
+    maven: {
+      name: 'Maven',
+      icon: 'devicon-maven-plain',
+    },
+    github: {
+      name: 'GitHub',
+      icon: 'devicon-github-original',
+    },
+    gitlab: {
+      name: 'GitLab',
+      icon: 'devicon-gitlab-plain',
+    },
+    circleci: {
+      name: 'CircleCI',
+      icon: 'devicon-circleci-plain',
+    },
   };
 
   function getVariant(variantKey: string) {
-    return variantOptions[variantKey] || { name: 'Unknown', icon: '' };
+    return (
+      variantOptions[variantKey] || {
+        name: variantKey.charAt(0).toUpperCase() + variantKey.slice(1),
+      }
+    );
   }
 
   $: selectedVariant = getVariant(variant);
 </script>
 
-<span class="inline-block">
-  <div class="flex items-center space-x-1 mx-1">
-    <i class={selectedVariant.icon}></i>
-    <span class="text-gray-300">{selectedVariant.name}</span>
-  </div>
+<span class="flex items-center space-x-1 mx-1 text-gray-300">
+  {#if selectedVariant.icon}
+    <i class={selectedVariant.icon} />
+  {:else if selectedVariant.customIcon}
+    <img src={selectedVariant.customIcon} alt={selectedVariant.name} class="h-4 w-4 grayscale" />
+  {/if}
+  <span class="text-gray-300">{selectedVariant.name}</span>
 </span>

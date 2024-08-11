@@ -1,13 +1,7 @@
 <script lang="ts">
-  import * as Avatar from '$lib/components/ui/avatar';
-  import Badge from '$lib/components/ui/badge/badge.svelte';
   import { Button } from '$lib/components/ui/button';
   import { Separator } from '$lib/components/ui/separator';
-  import ardoqLogo from '$lib/images/logos/ardoq.png';
-  import aaltoLogo from '$lib/images/logos/aalto.png';
-  import dtuLogo from '$lib/images/logos/dtu.png';
   import Link from '../components/Link.svelte';
-  import At from '$components/At.svelte';
   import SummaryList from '$components/summary/SummaryList.svelte';
 </script>
 

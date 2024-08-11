@@ -1,7 +1,7 @@
 <script lang="ts">
   import * as Card from '$lib/components/ui/card';
   import { CalendarDays, Icon } from 'svelte-hero-icons';
-  import Tech from '../components/Tech.svelte';
+  import TechContainer from '$components/tech/TechContainer.svelte';
 
   export let name: string;
   export let description: string;
@@ -21,11 +21,7 @@
     </Card.Header>
     <Card.Content class="flex flex-col space-y-2 pb-1">
       <span class="text-gray-200">{description}</span>
-      <div class="flex flex-wrap">
-        {#each technologies as tech}
-          <Tech variant={tech} />
-        {/each}
-      </div>
+      <TechContainer variants={technologies} />
     </Card.Content>
     <Card.Footer>
       <div class="flex w-full justify-between items-center">

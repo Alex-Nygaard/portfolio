@@ -27,8 +27,28 @@
     'html',
     'css',
   ].sort();
-  let frameworks = ['react', 'svelte', 'nodejs', 'express', 'flask', 'spring'].sort();
-  let tools = ['postgresql', 'prisma', 'mongodb', 'tensorflow', 'aws', 'azure', 'docker'].sort();
+  let frameworks = [
+    'react',
+    'sveltekit',
+    'nodejs',
+    'express',
+    'flask',
+    'spring',
+    'tensorflow',
+    'pytorch',
+  ].sort();
+  let tools = [
+    'postgresql',
+    'prisma',
+    'mongodb',
+    'redis',
+    'aws',
+    'azure',
+    'docker',
+    'github',
+    'gitlab',
+    'jira',
+  ].sort();
 </script>
 
 <div class="flex items-center justify-center p-10">
@@ -78,30 +98,38 @@
         </div>
       </div>
 
-      <div class="flex flex-col font-hack h-48 w-full">
+      <div class="flex flex-col font-hack h-fit w-full">
         <h1 class="text-lg font-semibold py-3 font-sans">🧠 Some stuff I know</h1>
-        <Tabs.Root value="languages" class="">
-          <Tabs.List>
-            <Tabs.Trigger value="languages">
-              <div class="flex space-x-2 items-center">
-                <Icon src={Language} outline size="18" />
-                <span>Languages</span>
-              </div>
-            </Tabs.Trigger>
-            <Tabs.Trigger value="frameworks">
-              <div class="flex space-x-2 items-center">
-                <Icon src={CubeTransparent} outline size="18" />
-                <span>Frameworks</span>
-              </div>
-            </Tabs.Trigger>
-            <Tabs.Trigger value="tools">
-              <div class="flex space-x-2 items-center">
-                <Icon src={Wrench} outline size="18" />
-                <span>Tools</span>
-              </div>
-            </Tabs.Trigger>
-          </Tabs.List>
-          <div class="p-2 max-w-[38rem]">
+        <Tabs.Root value="languages">
+          <div class="flex flex-wrap gap-2">
+            <Tabs.List>
+              <Tabs.Trigger value="languages">
+                <div class="flex space-x-2 items-center">
+                  <Icon src={Language} outline size="18" />
+                  <span>Languages</span>
+                </div>
+              </Tabs.Trigger>
+            </Tabs.List>
+
+            <Tabs.List>
+              <Tabs.Trigger value="frameworks">
+                <div class="flex space-x-2 items-center">
+                  <Icon src={CubeTransparent} outline size="18" />
+                  <span>Frameworks</span>
+                </div>
+              </Tabs.Trigger>
+            </Tabs.List>
+
+            <Tabs.List>
+              <Tabs.Trigger value="tools">
+                <div class="flex space-x-2 items-center">
+                  <Icon src={Wrench} outline size="18" />
+                  <span>Tools</span>
+                </div>
+              </Tabs.Trigger>
+            </Tabs.List>
+          </div>
+          <div class="p-2">
             <Tabs.Content value="languages">
               <TechContainer variants={languages} />
             </Tabs.Content>

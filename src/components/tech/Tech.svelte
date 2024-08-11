@@ -171,6 +171,14 @@
       name: 'CircleCI',
       icon: 'devicon-circleci-plain',
     },
+    pytorch: {
+      name: 'PyTorch',
+      icon: 'devicon-pytorch-original',
+    },
+    sveltekit: {
+      name: 'SvelteKit',
+      icon: 'devicon-svelte-plain',
+    },
   };
 
   function getVariant(variantKey: string) {

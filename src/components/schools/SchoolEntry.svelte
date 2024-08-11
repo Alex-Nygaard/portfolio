@@ -110,7 +110,7 @@
         {/if}
       </div>
     {/if}
-    <a href={website} class="flex-shrink-0">
+    <a href={website} class="flex-shrink-0 mt-3">
       <img
         src={logo}
         alt={name + ' logo'}

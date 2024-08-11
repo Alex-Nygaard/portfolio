@@ -38,7 +38,7 @@
   ];
 </script>
 
-<section class="">
+<section class="w-5/6 sm:w-fit">
   {#each entries as entry}
     <SummaryElement {...entry} />
   {/each}

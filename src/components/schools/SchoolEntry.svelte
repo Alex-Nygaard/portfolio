@@ -64,9 +64,9 @@
 
       {#each tabs as tab}
         <Tabs.Content value={tab.label}>
-          <div class={`grid grid-cols-${tab.cells.length / 2} gap-4 space-y-2 max-w-4xl`}>
+          <div class="flex flex-wrap gap-4 max-w-4xl">
             {#each tab.cells as { label, values }}
-              <div class="flex items-center">
+              <div class="flex items-center w-5/12">
                 <h3 class="flex items-center justify-center text-md font-semibold mr-8 h-[72px]">
                   {label}
                 </h3>

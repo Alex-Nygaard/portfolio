@@ -42,65 +42,67 @@
   let navIsOpen = false;
 </script>
 
-<nav class="flex justify-between w-full h-24 items-center p-4 px-8">
-  <a
-    href="/"
-    class="text-5xl whitespace-nowrap font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text"
-  >
-    {'<A />'}
-  </a>
-  <div class="sm:flex h-7 items-center hidden">
-    <Button href="/about" variant="ghost">
-      <span class="underline">A</span>bout
-    </Button>
-    <Separator orientation="vertical" />
-    <Button href="/work" variant="ghost">
-      <span class="underline">W</span>ork
-    </Button>
-    <Separator orientation="vertical" />
-    <Button href="/education" variant="ghost">
-      <span class="underline">E</span>ducation
-    </Button>
-    <Separator orientation="vertical" />
-    <Button href="/projects" variant="ghost">
-      <span class="underline">P</span>rojects
-    </Button>
-    <Separator orientation="vertical" class="h-0" />
-    <Button class="ml-2" href="/contact">
-      <span class="underline">C</span>ontact
-    </Button>
-  </div>
-  <div class="flex sm:hidden">
-    <DropdownMenu.Root>
-      <DropdownMenu.Trigger>
-        <Button variant="ghost" class="ml-4">
-          <Icon src={Bars3} />
-        </Button>
-      </DropdownMenu.Trigger>
-      <DropdownMenu.Content>
-        <DropdownMenu.Item href="/about">
-          About
-          <DropdownMenu.Shortcut>A</DropdownMenu.Shortcut>
-        </DropdownMenu.Item>
-        <DropdownMenu.Item href="/work">
-          Work
-          <DropdownMenu.Shortcut>W</DropdownMenu.Shortcut>
-        </DropdownMenu.Item>
-        <DropdownMenu.Item href="/education"
-          >Education
-          <DropdownMenu.Shortcut>E</DropdownMenu.Shortcut>
-        </DropdownMenu.Item>
-        <DropdownMenu.Item href="/projects"
-          >Projects
-          <DropdownMenu.Shortcut>P</DropdownMenu.Shortcut>
-        </DropdownMenu.Item>
-        <DropdownMenu.Item href="/contact"
-          >Contact
-          <DropdownMenu.Shortcut>C</DropdownMenu.Shortcut>
-        </DropdownMenu.Item>
-      </DropdownMenu.Content>
-    </DropdownMenu.Root>
-  </div>
-</nav>
+<div class="flex flex-col w-full h-full">
+  <nav class="flex justify-between w-full h-24 items-center p-4 px-8">
+    <a
+      href="/"
+      class="text-5xl whitespace-nowrap font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text"
+    >
+      {'<A />'}
+    </a>
+    <div class="sm:flex h-7 items-center hidden">
+      <Button href="/about" variant="ghost">
+        <span class="underline">A</span>bout
+      </Button>
+      <Separator orientation="vertical" />
+      <Button href="/work" variant="ghost">
+        <span class="underline">W</span>ork
+      </Button>
+      <Separator orientation="vertical" />
+      <Button href="/education" variant="ghost">
+        <span class="underline">E</span>ducation
+      </Button>
+      <Separator orientation="vertical" />
+      <Button href="/projects" variant="ghost">
+        <span class="underline">P</span>rojects
+      </Button>
+      <Separator orientation="vertical" class="h-0" />
+      <Button class="ml-2" href="/contact">
+        <span class="underline">C</span>ontact
+      </Button>
+    </div>
+    <div class="flex sm:hidden">
+      <DropdownMenu.Root>
+        <DropdownMenu.Trigger>
+          <Button variant="ghost" class="ml-4">
+            <Icon src={Bars3} />
+          </Button>
+        </DropdownMenu.Trigger>
+        <DropdownMenu.Content>
+          <DropdownMenu.Item href="/about">
+            About
+            <DropdownMenu.Shortcut>A</DropdownMenu.Shortcut>
+          </DropdownMenu.Item>
+          <DropdownMenu.Item href="/work">
+            Work
+            <DropdownMenu.Shortcut>W</DropdownMenu.Shortcut>
+          </DropdownMenu.Item>
+          <DropdownMenu.Item href="/education"
+            >Education
+            <DropdownMenu.Shortcut>E</DropdownMenu.Shortcut>
+          </DropdownMenu.Item>
+          <DropdownMenu.Item href="/projects"
+            >Projects
+            <DropdownMenu.Shortcut>P</DropdownMenu.Shortcut>
+          </DropdownMenu.Item>
+          <DropdownMenu.Item href="/contact"
+            >Contact
+            <DropdownMenu.Shortcut>C</DropdownMenu.Shortcut>
+          </DropdownMenu.Item>
+        </DropdownMenu.Content>
+      </DropdownMenu.Root>
+    </div>
+  </nav>
 
-<slot />
+  <slot />
+</div>

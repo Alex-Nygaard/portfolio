@@ -11,7 +11,7 @@
   export let dates: string;
 </script>
 
-<div class="p-3">
+<div class="p-3 h-fit">
   <Card.Root class="bg-gray-900 w-[26rem] h-[28rem] flex flex-col justify-between">
     <Card.Header class="pb-1">
       <Card.Title class="">

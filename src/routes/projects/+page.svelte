@@ -1,18 +1,16 @@
 <script lang="ts">
   import Project from '../../components/Project.svelte';
-  import tudelftCampus from '$lib/images/tudelft-campus.jpeg';
+  import tudelftCampus from '$lib/images/campuses/tudelft.jpeg';
 
   import quizzzImage from '$lib/images/projects/quizzz.png';
-  import marketplaceImage from '$lib/images/projects/marketplace.png';
   import eeImage from '$lib/images/projects/ee.png';
   import portfolioImage from '$lib/images/projects/portfolio.png';
   import memoryImage from '$lib/images/projects/memory.png';
-  import isaknowImage from '$lib/images/projects/isaknow.png';
   import bookInventoryImage from '$lib/images/projects/book-inventory.png';
   import martianImage from '$lib/images/projects/martian.jpg';
 </script>
 
-<div class="w-full flex flex-wrap items-center justify-center">
+<div class="flex-1 flex items-center justify-center flex-wrap gap-4">
   <Project
     name="Quizzz app"
     description="A multiplayer desktop quiz application for raising awareness on energy consumption and sustainable consumer practices."

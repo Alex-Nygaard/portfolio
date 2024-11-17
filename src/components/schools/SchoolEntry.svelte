@@ -33,8 +33,8 @@
   />
   <div class="flex flex-wrap justify-between">
     <div>
-      <h1 class="text-4xl font-semibold">{name}</h1>
-      <h2 class="text-2xl font-medium">{degree}</h2>
+      <h1 class="text-4xl font-semibold">{degree}</h1>
+      <h2 class="text-2xl font-medium">{name}</h2>
     </div>
     <div class="flex flex-col gap-1 text-md text-gray-300">
       <div class="inline-flex items-center gap-2">

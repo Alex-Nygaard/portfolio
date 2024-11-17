@@ -1,13 +1,35 @@
 <script lang="ts">
-  import tudelftCampus from '$lib/images/tudelft-campus.jpeg';
-  import tudelftLogo from '$lib/images/tudelft-logo.png';
-  import uwcisakCampus from '$lib/images/uwcisak-campus.jpeg';
-  import uwcisakLogo from '$lib/images/uwcisak-logo.png';
-  import kgCampus from '$lib/images/kg-campus.jpeg';
-  import kgLogo from '$lib/images/kg-logo.png';
+  import aaltoLogo from '$lib/images/logos/aalto.png';
+  import aaltoCampus from '$lib/images/campuses/aalto.jpg';
+  import tudelftCampus from '$lib/images/campuses/tudelft.jpeg';
+  import tudelftLogo from '$lib/images/logos/tudelft.png';
+  import uwcisakCampus from '$lib/images/campuses/uwcisak.jpeg';
+  import uwcisakLogo from '$lib/images/logos/uwcisak.png';
+  import kgCampus from '$lib/images/campuses/kg.jpeg';
+  import kgLogo from '$lib/images/logos/kg.png';
   import SchoolEntry from '$components/schools/SchoolEntry.svelte';
 
   const schools = [
+    {
+      name: 'Aalto University',
+      degree: 'MSc Security and Cloud Computing - SECCLO Erasmus Mundus Joint Master',
+      time: 'August 2024 - June 2026 (exp.)',
+      location: 'Helsinki, Finland',
+      logo: aaltoLogo,
+      website: 'https://www.aalto.fi/en',
+      background: aaltoCampus,
+      tabs: [
+        {
+          label: '2024-2025',
+          cells: [
+            {
+              label: 'Semester 1',
+              values: ['TODO'],
+            },
+          ],
+        },
+      ],
+    },
     {
       name: 'Technical University of Delft',
       degree: 'BSc Computer Science and Engineering',

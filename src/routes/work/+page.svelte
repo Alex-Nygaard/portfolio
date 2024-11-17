@@ -13,7 +13,7 @@
 
   const positions = [
     {
-      role: 'Software Engineering Intern',
+      role: 'Software Engineering Apprentice',
       isCurrent: true,
       company: {
         name: 'Ardoq',
@@ -22,11 +22,27 @@
       },
       location: 'Oslo, Norway',
       tech: {
-        backend: ['clojure', 'docker', 'redis'],
-        frontend: ['react', 'typescript'],
-        tools: ['azure', 'circleci', 'docker', 'github', 'jira'],
+        backend: ['clojure', 'postgresql'],
+        frontend: ['typescript', 'react'],
+        tools: ['github', 'jira', 'docker', 'circleci'],
       },
-      time: 'April 2024 - June 2024 (3 months)',
+      time: 'September 2024 - Present',
+    },
+    {
+      role: 'Software Engineering Intern',
+      isCurrent: false,
+      company: {
+        name: 'Ardoq',
+        website: 'https://www.ardoq.com/',
+        logo: ardoqLogo,
+      },
+      location: 'Oslo, Norway',
+      tech: {
+        backend: ['clojure', 'postgresql', 'redis'],
+        frontend: ['typescript', 'react'],
+        tools: ['github', 'jira', 'docker', 'circleci'],
+      },
+      time: 'July 2024 - August 2024 (3 months)',
     },
     {
       role: 'Backend Developer (Working Student)',

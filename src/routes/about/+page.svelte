@@ -8,6 +8,7 @@
     Language,
     Wrench,
     CubeTransparent,
+    BookOpen,
   } from 'svelte-hero-icons';
   import Progress from '$lib/components/ui/progress/progress.svelte';
   import * as Tabs from '$lib/components/ui/tabs';
@@ -51,7 +52,7 @@
   ].sort();
 </script>
 
-<div class="flex items-center justify-center p-10">
+<div class="flex items-center justify-center p-10 flex-grow">
   <div
     class="flex flex-wrap min-[900px]:flex-nowrap justify-center min-[900px]:justify-evenly items-center bg-gray-900 shadow-lg rounded-lg overflow-hidden max-w-full"
   >
@@ -72,14 +73,13 @@
             <span>SECCLO Joint Master's Degree</span>
           </div>
           <div class="flex space-x-2 text-gray-300">
-            <!-- <Icon src={BookOpen} outline size="24" /> -->
             <span>Security and Cloud Computing</span>
           </div>
           <div class="flex space-x-2 justify-end text-xs text-gray-400">
             <Icon src={CalendarDays} outline size="16" />
             <span>September 2024 - June 2026 (exp.)</span>
           </div>
-          <Progress value={5} max={100} class="h-1 my-1" />
+          <Progress value={25} max={100} class="h-1 my-1" />
         </div>
         <div class="bg-gray-800 w-72 p-3 space-y-2 rounded-lg text-md m-2">
           <div class="flex space-x-2">
@@ -87,14 +87,13 @@
             <span>Ardoq</span>
           </div>
           <div class="flex space-x-2 text-gray-300">
-            <!-- <Icon src={BookOpen} outline size="24" /> -->
-            <span>Software Engineering Intern</span>
+            <span>Software Engineering Apprentice</span>
           </div>
           <div class="flex space-x-2 justify-end text-xs text-gray-400">
             <Icon src={CalendarDays} outline size="16" />
-            <span>July 2024 - August 2024 (exp.)</span>
+            <span>September 2024 - Present</span>
           </div>
-          <Progress value={80} max={100} class="h-1 my-1" />
+          <Progress value={100} max={100} class="h-1 my-1" />
         </div>
       </div>
 

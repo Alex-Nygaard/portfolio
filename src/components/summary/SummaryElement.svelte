@@ -4,7 +4,7 @@
   import Badge from '../../lib/components/ui/badge/badge.svelte';
 
   export let title: string;
-  export let currentBadge: boolean;
+  export let currentBadge: boolean = false;
   export let at: { label: string; link: string; logo?: string };
   export let children: { title: string; at: { label: string; link: string; logo?: string } }[] = [];
 </script>

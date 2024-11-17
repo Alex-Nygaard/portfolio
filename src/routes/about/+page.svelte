@@ -60,7 +60,7 @@
       <img src={pfpSource} alt="Profile" class="w-96 h-auto" />
       <!-- TODO: replace with https://sharing-with-alex.s3.eu-north-1.amazonaws.com/images/pfp-transparent.png-->
     </div>
-    <div class="flex flex-col min-w-80 p-5 max-w-[46rem]">
+    <div class="flex flex-col min-w-80 p-5 max-w-[46rem] gap-2">
       <h2 class="text-2xl font-semibold">About Me</h2>
       <p class="text-gray-400 min-w-0">
         Security and Cloud Computing student at Aalto University. I like working with backend

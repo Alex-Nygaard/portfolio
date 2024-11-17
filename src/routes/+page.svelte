@@ -13,7 +13,7 @@
   </h1>
   <section class="flex space-x-5">
     <Button
-      href="https://sharing-with-alex.s3.eu-north-1.amazonaws.com/files/CV_alexander-nygaard.pdf"
+      href="https://sharing-with-alex.s3.eu-north-1.amazonaws.com/files/CV_alexander-nygaard.pdf+"
       target="_blank"
       variant="outline"
       >Download CV

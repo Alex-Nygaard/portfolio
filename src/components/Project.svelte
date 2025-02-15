@@ -29,7 +29,7 @@
           <Icon src={CalendarDays} outline size="20" />
           <span>{dates}</span>
         </div>
-        <a href={link} target="”_blank”" class="text-gray-300 text-3xl">
+        <a href={link} target="”_blank”" class="text-gray-300 text-3xl" aria-label="github">
           <i class="devicon-github-original"></i>
         </a>
       </div>

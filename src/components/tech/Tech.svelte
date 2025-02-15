@@ -194,7 +194,7 @@
 
 <span class="flex items-center space-x-1 mx-1 text-gray-300">
   {#if selectedVariant.icon}
-    <i class={selectedVariant.icon} />
+    <i class={selectedVariant.icon}></i>
   {:else if selectedVariant.customIcon}
     <img src={selectedVariant.customIcon} alt={selectedVariant.name} class="h-4 w-4 grayscale" />
   {/if}

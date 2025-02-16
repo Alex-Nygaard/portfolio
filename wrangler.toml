@@ -1,0 +1,4 @@
+routes = [
+  { pattern = "alexnygaard.com", custom_domain = true },
+  { pattern = "www.alexnygaard.com", custom_domain = true }
+]

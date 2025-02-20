@@ -17,7 +17,7 @@
 </script>
 
 <School
-  name="Aalto University"
+  name="Aalto University & Technical University of Denmark"
   background={aaltoCampus}
   preDegreeNote="Erasmus Mundus Joint Master"
   degree="MSc Security and Cloud Computing (SECCLO)"
@@ -125,7 +125,7 @@
   <Years>
     <Year header="Year 1">
       <Courses
-        header="Q1"
+        header="Quarter 1"
         categorizedCourses={{
           tudelftMath: {
             label: '🧮',
@@ -142,7 +142,7 @@
         }}
       />
       <Courses
-        header="Q2"
+        header="Quarter 2"
         categorizedCourses={{
           tudelftMath: {
             label: '🧮',
@@ -159,7 +159,7 @@
         }}
       />
       <Courses
-        header="Q3"
+        header="Quarter 3"
         categorizedCourses={{
           tudelftMath: {
             label: '🧮',
@@ -176,7 +176,7 @@
         }}
       />
       <Courses
-        header="Q4"
+        header="Quarter 4"
         categorizedCourses={{
           tudelftMath: {
             label: '🧮',
@@ -195,7 +195,7 @@
     </Year>
     <Year header="Year 2">
       <Courses
-        header="Q1"
+        header="Quarter 1"
         categorizedCourses={{
           tudelftSoftware: {
             label: '🧑‍💻',
@@ -208,7 +208,7 @@
         }}
       />
       <Courses
-        header="Q2"
+        header="Quarter 2"
         categorizedCourses={{
           tudelftMath: {
             label: '🧮',
@@ -225,7 +225,7 @@
         }}
       />
       <Courses
-        header="Q3"
+        header="Quarter 3"
         categorizedCourses={{
           tudelftSoftware: {
             label: '🧑‍💻',
@@ -242,36 +242,36 @@
         }}
       />
       <Courses
-        header="Q4"
+        header="Quarter 4"
         categorizedCourses={{
           tudelftSoftware: {
             label: '🧑‍💻',
-            courses: ['💼 Software Project'],
+            courses: ['Software Project 💼'],
           },
         }}
       />
     </Year>
     <Year header="Year 3">
       <Courses
-        header="Q1"
+        header="Quarter 1"
         categorizedCourses={{
           tudelftExchange: {
             label: '✈️',
-            courses: ['✈️ Exchange Semester @ Hong Kong University of Science and Technology'],
+            courses: ['Exchange Semester @ Hong Kong University of Science and Technology'],
           },
         }}
       />
       <Courses
-        header="Q2"
+        header="Quarter 2"
         categorizedCourses={{
           tudelftExchange: {
             label: '✈️',
-            courses: ['✈️ Exchange Semester @ Hong Kong University of Science and Technology'],
+            courses: ['Exchange Semester @ Hong Kong University of Science and Technology'],
           },
         }}
       />
       <Courses
-        header="Q3"
+        header="Quarter 3"
         categorizedCourses={{
           tudelftSoftware: {
             label: '🧑‍💻',
@@ -284,7 +284,7 @@
         }}
       />
       <Courses
-        header="Q4"
+        header="Quarter 4"
         categorizedCourses={{
           tudelftResearch: {
             label: '🔬',

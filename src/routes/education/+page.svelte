@@ -2,6 +2,6 @@
   import SchoolList from '$components/schools/SchoolList.svelte';
 </script>
 
-<div class="space-y-5">
+<div class="space-y-5 pb-5">
   <SchoolList />
 </div>

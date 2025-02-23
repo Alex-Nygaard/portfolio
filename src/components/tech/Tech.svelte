@@ -179,6 +179,10 @@
       name: 'SvelteKit',
       icon: 'devicon-svelte-plain',
     },
+    gcp: {
+      name: 'GCP',
+      icon: 'devicon-googlecloud-plain',
+    },
   };
 
   function getVariant(variantKey: string) {

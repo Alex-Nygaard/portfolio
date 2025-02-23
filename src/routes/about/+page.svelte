@@ -14,6 +14,8 @@
   import * as Tabs from '$lib/components/ui/tabs';
   import Tech from '$components/tech/Tech.svelte';
   import TechContainer from '$components/tech/TechContainer.svelte';
+  import TechCategories from '$components/tech/TechCategories.svelte';
+  import TechCategorySeparator from '$components/tech/TechCategorySeparator.svelte';
 
   let languages = [
     'python',
@@ -49,6 +51,7 @@
     'github',
     'gitlab',
     'jira',
+    'gcp',
   ].sort();
 </script>
 
@@ -79,7 +82,7 @@
             <Icon src={CalendarDays} outline size="16" />
             <span>September 2024 - June 2026 (exp.)</span>
           </div>
-          <Progress value={25} max={100} class="h-1 my-1" />
+          <Progress value={40} max={100} class="h-1 my-1" />
         </div>
         <div class="bg-gray-800 w-72 p-3 space-y-2 rounded-lg text-md m-2">
           <div class="flex space-x-2">
@@ -98,48 +101,28 @@
       </div>
 
       <div class="flex flex-col font-hack h-fit w-full">
-        <h1 class="text-lg font-semibold py-3 font-sans">🧠 Some stuff I know</h1>
-        <Tabs.Root value="languages">
-          <div class="flex flex-wrap gap-2">
-            <Tabs.List>
-              <Tabs.Trigger value="languages">
-                <div class="flex space-x-2 items-center">
-                  <Icon src={Language} outline size="18" />
-                  <span>Languages</span>
-                </div>
-              </Tabs.Trigger>
-            </Tabs.List>
+        <h1 class="text-xl font-semibold py-3 font-sans text-center">🧠 Some stuff I know</h1>
 
-            <Tabs.List>
-              <Tabs.Trigger value="frameworks">
-                <div class="flex space-x-2 items-center">
-                  <Icon src={CubeTransparent} outline size="18" />
-                  <span>Frameworks</span>
-                </div>
-              </Tabs.Trigger>
-            </Tabs.List>
-
-            <Tabs.List>
-              <Tabs.Trigger value="tools">
-                <div class="flex space-x-2 items-center">
-                  <Icon src={Wrench} outline size="18" />
-                  <span>Tools</span>
-                </div>
-              </Tabs.Trigger>
-            </Tabs.List>
-          </div>
-          <div class="p-2">
-            <Tabs.Content value="languages">
-              <TechContainer variants={languages} />
-            </Tabs.Content>
-            <Tabs.Content value="frameworks">
-              <TechContainer variants={frameworks} />
-            </Tabs.Content>
-            <Tabs.Content value="tools">
-              <TechContainer variants={tools} />
-            </Tabs.Content>
-          </div>
-        </Tabs.Root>
+        <TechCategories>
+          <TechCategorySeparator header="📚 Languages" />
+          <TechContainer>
+            {#each languages as language}
+              <Tech variant={language} />
+            {/each}
+          </TechContainer>
+          <TechCategorySeparator header="🧩 Frameworks" />
+          <TechContainer>
+            {#each frameworks as framework}
+              <Tech variant={framework} />
+            {/each}
+          </TechContainer>
+          <TechCategorySeparator header="🛠️ Tools" />
+          <TechContainer>
+            {#each tools as tool}
+              <Tech variant={tool} />
+            {/each}
+          </TechContainer>
+        </TechCategories>
       </div>
     </div>
   </div>

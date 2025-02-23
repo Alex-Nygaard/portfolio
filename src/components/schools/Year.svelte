@@ -10,7 +10,7 @@
 
 <div class="w-full gap-4">
   <div class="flex flex-col justify-center items-center gap-1">
-    <span class=" font-bold text-gray-300">{header}</span>
+    <span class="font-bold text-gray-300">{header}</span>
     <Separator class="w-11/12" />
     {#if time || location}
       <div class="flex flex-wrap space-x-4">

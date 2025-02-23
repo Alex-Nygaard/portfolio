@@ -10,6 +10,7 @@
   import ardoqLogo from '$lib/images/logos/ardoq.png';
   import picnicLogo from '$lib/images/logos/picnic.svg';
   import hammerLogo from '$lib/images/logos/hammer.png';
+  import Tech from '$components/tech/Tech.svelte';
 
   const positions = [
     {
@@ -124,15 +125,27 @@
           <div class="grid grid-cols-[auto_1fr] gap-2">
             {#if position.tech.backend && position.tech.backend.length > 0}
               <span class="font-bold">Backend</span>
-              <TechContainer variants={position.tech.backend} />
+              <TechContainer>
+                {#each position.tech.backend as tech}
+                  <Tech variant={tech} />
+                {/each}
+              </TechContainer>
             {/if}
             {#if position.tech.frontend && position.tech.frontend.length > 0}
               <span class="font-bold">Frontend</span>
-              <TechContainer variants={position.tech.frontend} />
+              <TechContainer>
+                {#each position.tech.frontend as tech}
+                  <Tech variant={tech} />
+                {/each}
+              </TechContainer>
             {/if}
             {#if position.tech.tools && position.tech.tools.length > 0}
               <span class="font-bold">Tools</span>
-              <TechContainer variants={position.tech.tools} />
+              <TechContainer>
+                {#each position.tech.tools as tech}
+                  <Tech variant={tech} />
+                {/each}
+              </TechContainer>
             {/if}
           </div>
         </div>

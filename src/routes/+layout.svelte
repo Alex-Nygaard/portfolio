@@ -79,26 +79,36 @@
           </Button>
         </DropdownMenu.Trigger>
         <DropdownMenu.Content>
-          <DropdownMenu.Item href="/about">
-            About
-            <DropdownMenu.Shortcut>A</DropdownMenu.Shortcut>
-          </DropdownMenu.Item>
-          <DropdownMenu.Item href="/work">
-            Work
-            <DropdownMenu.Shortcut>W</DropdownMenu.Shortcut>
-          </DropdownMenu.Item>
-          <DropdownMenu.Item href="/education"
-            >Education
-            <DropdownMenu.Shortcut>E</DropdownMenu.Shortcut>
-          </DropdownMenu.Item>
-          <DropdownMenu.Item href="/projects"
-            >Projects
-            <DropdownMenu.Shortcut>P</DropdownMenu.Shortcut>
-          </DropdownMenu.Item>
-          <DropdownMenu.Item href="/contact"
-            >Contact
-            <DropdownMenu.Shortcut>C</DropdownMenu.Shortcut>
-          </DropdownMenu.Item>
+          <a href="/about">
+            <DropdownMenu.Item>
+              About
+              <DropdownMenu.Shortcut>A</DropdownMenu.Shortcut>
+            </DropdownMenu.Item>
+          </a>
+          <a href="/work">
+            <DropdownMenu.Item>
+              Work
+              <DropdownMenu.Shortcut>W</DropdownMenu.Shortcut>
+            </DropdownMenu.Item>
+          </a>
+          <a href="/education">
+            <DropdownMenu.Item>
+              Education
+              <DropdownMenu.Shortcut>E</DropdownMenu.Shortcut>
+            </DropdownMenu.Item>
+          </a>
+          <a href="/projects">
+            <DropdownMenu.Item>
+              Projects
+              <DropdownMenu.Shortcut>P</DropdownMenu.Shortcut>
+            </DropdownMenu.Item>
+          </a>
+          <a href="/contact">
+            <DropdownMenu.Item>
+              Contact
+              <DropdownMenu.Shortcut>C</DropdownMenu.Shortcut>
+            </DropdownMenu.Item>
+          </a>
         </DropdownMenu.Content>
       </DropdownMenu.Root>
     </div>

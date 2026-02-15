@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Separator } from '$lib/components/ui/separator';
-  import { highlightedCategory } from '$lib/state/highlight';
+  import { highlightedCategory, hoveredCategory } from '$lib/state/highlight';
 
   export let header: string;
   export let categorizedCourses: Record<
@@ -18,7 +18,7 @@
     {#each Object.keys(categorizedCourses) as category}
       <span
         class="relative transition-all duration-200"
-        class:scale-130={$highlightedCategory === category}
+        class:scale-130={$highlightedCategory === category || $hoveredCategory === category}
       >
         {categorizedCourses[category].label}
       </span>
@@ -27,8 +27,8 @@
         {#each categorizedCourses[category].courses as course}
           <div
             class="w-fit rounded-lg p-1 transition-all duration-200"
-            class:bg-gray-700={$highlightedCategory === category}
-            class:bg-opacity-50={$highlightedCategory === category}
+            class:bg-gray-700={$highlightedCategory === category || $hoveredCategory === category}
+            class:bg-opacity-50={$highlightedCategory === category || $hoveredCategory === category}
           >
             {course}
           </div>

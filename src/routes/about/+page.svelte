@@ -270,7 +270,7 @@
       <div class="info-card">
         <div class="info-card-header">
           <svg class="info-card-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-          <span class="info-card-title">Ardoq <span class="current-badge">Current</span></span>
+          <span class="info-card-title">Ardoq</span>
         </div>
         <div class="info-card-sub">Software Engineering Apprentice</div>
         <div class="info-card-date">

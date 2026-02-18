@@ -192,7 +192,7 @@
   <section class="hero">
     <p class="hero-eyebrow animate-fade-up animate-fade-up-1">
       <span class="eyebrow-indicator"></span>
-      Software Engineer · Security & Cloud Computing
+      Software Engineer · MSc Security & Cloud Computing
     </p>
 
     <h1 class="hero-title animate-fade-up animate-fade-up-2">
@@ -203,7 +203,7 @@
     <div class="hero-pills animate-fade-up animate-fade-up-3">
       <span class="status-pill">
         <span class="pill-dot pill-dot--green"></span>
-        Software Eng. Apprentice · Ardoq
+        SWE Apprentice · Ardoq
       </span>
       <span class="status-pill">
         <span class="pill-dot pill-dot--blue"></span>

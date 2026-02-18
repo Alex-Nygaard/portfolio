@@ -87,9 +87,13 @@
       <Courses
         header="Semester 1"
         categorizedCourses={{
-          tbd: {
-            label: '⌛',
-            courses: ['TBD'],
+          seccloSecurity: {
+            label: '🔒',
+            courses: ['Ethical Hacking', 'Cybersecurity Fundamentals', 'Program Analysis'],
+          },
+          seccloResearch: {
+            label: '🔬',
+            courses: ['Research Topics in Cybersecurity', 'Model Checking'],
           },
         }}
       />

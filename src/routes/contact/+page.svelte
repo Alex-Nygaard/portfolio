@@ -136,14 +136,14 @@
       </a>
 
       <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/alex-nygard/" target="_blank" rel="noopener" class="contact-link">
+      <a href="https://www.linkedin.com/in/alexandernygard/" target="_blank" rel="noopener" class="contact-link">
         <div class="contact-link-left">
           <div class="contact-link-icon">
             <i class="devicon-linkedin-plain" style="font-size: 1.125rem;"></i>
           </div>
           <div>
             <div class="contact-link-label">LinkedIn</div>
-            <div class="contact-link-detail">linkedin.com/in/alex-nygard</div>
+            <div class="contact-link-detail">linkedin.com/in/alexandernygard</div>
           </div>
         </div>
         <span class="contact-link-arrow">↗</span>

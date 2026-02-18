@@ -133,21 +133,6 @@
     transition: width 0.8s ease;
   }
 
-  .current-badge {
-    display: inline-block;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.625rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--c-accent);
-    background-color: rgba(59, 130, 246, 0.1);
-    border: 1px solid rgba(59, 130, 246, 0.25);
-    padding: 0.1rem 0.45rem;
-    border-radius: 9999px;
-    margin-left: 0.375rem;
-    vertical-align: middle;
-  }
-
   /* ── Content column ────────────── */
   .content-col {
     display: flex;

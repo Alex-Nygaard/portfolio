@@ -19,17 +19,17 @@
 <School
   name="Aalto University & Technical University of Denmark"
   background={aaltoCampus}
-  preDegreeNote="Erasmus Mundus Joint Master"
-  degree="MSc Security and Cloud Computing (SECCLO)"
+  preDegreeNote="Erasmus Mundus Joint Master (SECCLO)"
+  degree="MSc Security and Cloud Computing"
   location="Helsinki & Copenhagen"
   time="2024-2026 (exp.)"
 >
   <Legend>
-    <LegendOption category="seccloCloud" label="Cloud ☁️" />
-    <LegendOption category="seccloSecurity" label="Security 🔒️" />
-    <LegendOption category="seccloWebDev" label="Web Dev 🧑‍💻" />
-    <LegendOption category="seccloResearch" label="Research 🔬" />
-    <LegendOption category="seccloWork" label="Work 💼" />
+    <LegendOption category="seccloCloud" label="Cloud" />
+    <LegendOption category="seccloSecurity" label="Security" />
+    <LegendOption category="seccloWebDev" label="Web Dev" />
+    <LegendOption category="seccloResearch" label="Research" />
+    <LegendOption category="seccloWork" label="Work" />
   </Legend>
   <Years>
     <Year header="Year 1" time="2024-2025" location="Helsinki, Finland">
@@ -73,7 +73,7 @@
             courses: [
               'Seminar in Computer Science',
               'Academic Communication for MSc Students',
-              'SECCLO Summer School ☀️',
+              'SECCLO Summer School',
             ],
           },
           seccloWork: {
@@ -118,13 +118,13 @@
   time="August 2021 - June 2024"
 >
   <Legend>
-    <LegendOption category="tudelftMath" label="Math 🧮" />
-    <LegendOption category="tudelftSystems" label="Systems 🛠️" />
-    <LegendOption category="tudelftSoftware" label="Software Development 🧑‍💻" />
-    <LegendOption category="tudelftModels" label="Computational Theory 💻" />
-    <LegendOption category="tudelftData" label="Data and AI 🤖" />
-    <LegendOption category="tudelftExchange" label="Exchange ✈️" />
-    <LegendOption category="tudelftResearch" label="Research 🔬" />
+    <LegendOption category="tudelftMath" label="Math" />
+    <LegendOption category="tudelftSystems" label="Systems" />
+    <LegendOption category="tudelftSoftware" label="Software Dev" />
+    <LegendOption category="tudelftModels" label="Theory" />
+    <LegendOption category="tudelftData" label="Data & AI" />
+    <LegendOption category="tudelftExchange" label="Exchange" />
+    <LegendOption category="tudelftResearch" label="Research" />
   </Legend>
   <Years>
     <Year header="Year 1">
@@ -250,7 +250,7 @@
         categorizedCourses={{
           tudelftSoftware: {
             label: '🧑‍💻',
-            courses: ['Software Project 💼'],
+            courses: ['Software Project'],
           },
         }}
       />
@@ -308,14 +308,9 @@
   time="August 2019 - May 2021"
 >
   <Legend>
-    <LegendOption category="uwcisakMath" label="Math 🧮" />
-    <!--    <LegendOption category="uwcisakCS" label="CS 💻" />-->
-    <!--    <LegendOption category="uwcisakPolitics" label="Politics 🌍" />-->
-    <!--    <LegendOption category="uwcisakEnglish" label="English 📚" />-->
-    <!--    <LegendOption category="uwcisakPhysics" label="Physics 🔭" />-->
-    <!--    <LegendOption category="uwcisakNorwegian" label="Norwegian 🇳🇴" />-->
-    <LegendOption category="uwcisakSciences" label="Sciences 🔭" />
-    <LegendOption category="uwcisakHumanities" label="Humanities 🏛️" />
+    <LegendOption category="uwcisakMath" label="Math" />
+    <LegendOption category="uwcisakSciences" label="Sciences" />
+    <LegendOption category="uwcisakHumanities" label="Humanities" />
   </Legend>
   <Year header="Courses">
     <Courses

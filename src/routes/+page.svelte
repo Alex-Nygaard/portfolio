@@ -213,7 +213,7 @@
 
     <div class="hero-actions animate-fade-up animate-fade-up-4">
       <a
-        href="https://sharing-with-alex.s3.eu-north-1.amazonaws.com/files/CV_alexander-nygaard.pdf+"
+        href="https://files.alexandernygard.com/CV_ALEXANDERNYGARD.pdf"
         target="_blank"
         class="btn-outline"
       >

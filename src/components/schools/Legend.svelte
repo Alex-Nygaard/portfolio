@@ -1,6 +1,12 @@
-<script lang="ts">
-</script>
+<style>
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+</style>
 
-<div class="flex gap-2 flex-wrap">
+<div class="legend">
   <slot />
 </div>

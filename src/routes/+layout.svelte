@@ -5,6 +5,7 @@
   import { goto } from '$app/navigation';
 
   function handleKeyDown(event: KeyboardEvent) {
+    if (event.metaKey || event.ctrlKey || event.altKey) return;
     const tag = (event.target as HTMLElement)?.tagName;
     if (tag === 'INPUT' || tag === 'TEXTAREA') return;
     switch (event.key) {

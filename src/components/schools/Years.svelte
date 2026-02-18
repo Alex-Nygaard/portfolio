@@ -1,3 +1,11 @@
-<div class="grid grid-cols-1 w-fit gap-4">
+<style>
+  .years-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+</style>
+
+<div class="years-container">
   <slot />
 </div>

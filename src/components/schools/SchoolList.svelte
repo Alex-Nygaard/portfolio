@@ -1,13 +1,4 @@
 <script lang="ts">
-  import aaltoLogo from '$lib/images/logos/aalto.png';
-  import aaltoCampus from '$lib/images/campuses/aalto.jpg';
-  import tudelftCampus from '$lib/images/campuses/tudelft.jpeg';
-  import tudelftLogo from '$lib/images/logos/tudelft.png';
-  import uwcisakCampus from '$lib/images/campuses/uwcisak.jpeg';
-  import uwcisakLogo from '$lib/images/logos/uwcisak.png';
-  import kgCampus from '$lib/images/campuses/kg.jpeg';
-  import kgLogo from '$lib/images/logos/kg.png';
-  import SchoolEntry from '$components/schools/SchoolEntry_v2.svelte';
   import Courses from '$components/schools/Courses.svelte';
   import Year from '$components/schools/Year.svelte';
   import School from '$components/schools/School.svelte';
@@ -18,7 +9,6 @@
 
 <School
   name="Aalto University & Technical University of Denmark"
-  background={aaltoCampus}
   preDegreeNote="Erasmus Mundus Joint Master (SECCLO)"
   degree="MSc Security and Cloud Computing"
   location="Helsinki & Copenhagen"
@@ -112,7 +102,6 @@
 
 <School
   name="Technical University of Delft"
-  background={tudelftCampus}
   degree="BSc Computer Science and Engineering"
   location="Delft, Netherlands"
   time="August 2021 - June 2024"
@@ -302,7 +291,6 @@
 
 <School
   name="UWC ISAK Japan"
-  background={uwcisakCampus}
   degree="International Baccalaureate Diploma"
   location="Karuizawa, Japan"
   time="August 2019 - May 2021"
@@ -348,7 +336,6 @@
 
 <School
   name="Kristelig Gymnasium"
-  background={kgCampus}
   degree="Certificate of Competence"
   location="Oslo, Norway"
   time="August 2018 - June 2019"

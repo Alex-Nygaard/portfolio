@@ -1,6 +1,5 @@
 <script lang="ts">
   export let name: string;
-  export let background: string = ''; // retained for prop compat, no longer displayed
   export let degree: string;
   export let preDegreeNote: string = '';
   export let time: string = '';
